@@ -16,9 +16,10 @@ from torch.utils.data import Dataset, DataLoader
 from torchvision import transforms
 from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score, confusion_matrix, roc_auc_score
 
-DATA_DIR = r"C:\Users\HP\.gemini\antigravity\scratch\multigalaxial_life\experiments\exp_01_galaxy_morphology\data"
-MODELS_DIR = r"C:\Users\HP\.gemini\antigravity\scratch\multigalaxial_life\experiments\exp_01_galaxy_morphology\models"
-RESULTS_DIR = r"C:\Users\HP\.gemini\antigravity\scratch\multigalaxial_life\experiments\exp_01_galaxy_morphology\results"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(BASE_DIR, "data")
+MODELS_DIR = os.path.join(BASE_DIR, "models")
+RESULTS_DIR = os.path.join(BASE_DIR, "results")
 
 os.makedirs(MODELS_DIR, exist_ok=True)
 os.makedirs(RESULTS_DIR, exist_ok=True)

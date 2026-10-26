@@ -1,0 +1,74 @@
+{
+    "record_id": "CAER-0001-20261026224344",
+    "timestamp_utc": "2026-10-26T17:13:44.285291Z",
+    "observation": {
+        "sample_id": "0001",
+        "sky_coordinates": {
+            "ra_deg": 180.125897,
+            "dec_deg": 12.584162
+        },
+        "instrument": "SDSS 2.5m Ritchey-Chretien, Apache Point Observatory",
+        "filters": "u, g, r, i, z photometric bands",
+        "pixel_scale_arcsec": 0.396,
+        "raw_file_sha256": "b837842d237001b6685eb314dd2cd1fc20ec6c66ddd34f11872f816f3aef4ed1",
+        "raw_image_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0001_Elliptical.jpg"
+    },
+    "model_provenance": {
+        "vision_engine": "Multigalaxial Life AstroNet",
+        "version": "AstroNet-v1.4-DualBranch",
+        "architecture": "4-Layer Deep ConvNet + Latent Spatial Autoencoder (64-dim bottleneck)"
+    },
+    "quantitative_metrics": {
+        "anomaly_score": 99.9,
+        "confidence_interval_95": [
+            95.4,
+            100.0
+        ],
+        "reconstruction_mse": 0.543037,
+        "cas_parameters": {
+            "Concentration": 1.2725405447225366,
+            "Asymmetry": 0.65267014503479,
+            "Smoothness": 0.9555706977844238,
+            "Mean_Intensity": 15.9200439453125,
+            "Std_Intensity": 41.006011962890625,
+            "Gini_Approx": 1.0029140710830688,
+            "Half_Light_Radius": 46.010868281309364
+        },
+        "classification_probabilities": {
+            "Elliptical": 0.17382484674453735,
+            "Spiral": 0.19646959006786346,
+            "Edge-on": 0.3275642395019531,
+            "Merger_Anomaly": 0.3021412491798401
+        }
+    },
+    "anomaly_classification": {
+        "assigned_category": "Category B: Observational or Instrumental Artifact",
+        "category_code": "B",
+        "category_d_ruled_out": true,
+        "ruling_out_justification": "Standard astrophysical/instrumental phenomena adequately account for observed flux profile and asymmetry; Category D unresolved status cannot be justified under the scientific falsification protocol."
+    },
+    "diagnostic_hypotheses": [
+        {
+            "hypothesis": "Instrumental defect or calibration error",
+            "plausibility": "High",
+            "confidence": 0.88
+        },
+        {
+            "hypothesis": "Point-spread function (PSF) deconvolution artifact",
+            "plausibility": "Moderate",
+            "confidence": 0.42
+        },
+        {
+            "hypothesis": "Genuine astrophysical transient",
+            "plausibility": "Low",
+            "confidence": 0.12
+        },
+        {
+            "hypothesis": "Unresolved anomalous structure",
+            "plausibility": "Negligible",
+            "confidence": 0.01
+        }
+    ],
+    "ordinary_explanations": "Likely sensor or optical anomaly: Linear residual signature (potential cosmic ray hit or diffraction spike)",
+    "recommended_followup": "Inspect raw FITS calibrated frames in SDSS SAS, examine flat-fields, and cross-reference with GAIA DR3 for foreground stellar contamination."
+}

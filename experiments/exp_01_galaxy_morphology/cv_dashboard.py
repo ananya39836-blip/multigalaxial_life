@@ -5,6 +5,16 @@ Features NASA TRL 7 Mission Control Center, CCSDS Space Packet Protocol, Autonom
 """
 
 import os
+import sys
+
+# Ensure local experiment directory and repo root are in python search path
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+if CURRENT_DIR not in sys.path:
+    sys.path.insert(0, CURRENT_DIR)
+REPO_ROOT = os.path.abspath(os.path.join(CURRENT_DIR, "..", ".."))
+if REPO_ROOT not in sys.path:
+    sys.path.insert(0, REPO_ROOT)
+
 import json
 import math
 import time
@@ -57,8 +67,8 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Paths
-BASE_DIR = r"C:\Users\HP\.gemini\antigravity\scratch\multigalaxial_life\experiments\exp_01_galaxy_morphology"
+# Paths - Dynamic resolution for Windows, Linux, and Streamlit Cloud
+BASE_DIR = CURRENT_DIR
 DATA_DIR = os.path.join(BASE_DIR, "data")
 MODELS_DIR = os.path.join(BASE_DIR, "models")
 RESULTS_DIR = os.path.join(BASE_DIR, "results")

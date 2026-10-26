@@ -14,9 +14,10 @@ from sklearn.svm import SVC
 from sklearn.metrics import classification_report, confusion_matrix, f1_score, accuracy_score
 import joblib
 
-DATA_DIR = r"C:\Users\HP\.gemini\antigravity\scratch\multigalaxial_life\experiments\exp_01_galaxy_morphology\data"
-MODELS_DIR = r"C:\Users\HP\.gemini\antigravity\scratch\multigalaxial_life\experiments\exp_01_galaxy_morphology\models"
-RESULTS_DIR = r"C:\Users\HP\.gemini\antigravity\scratch\multigalaxial_life\experiments\exp_01_galaxy_morphology\results"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(BASE_DIR, "data")
+MODELS_DIR = os.path.join(BASE_DIR, "models")
+RESULTS_DIR = os.path.join(BASE_DIR, "results")
 
 os.makedirs(MODELS_DIR, exist_ok=True)
 os.makedirs(RESULTS_DIR, exist_ok=True)

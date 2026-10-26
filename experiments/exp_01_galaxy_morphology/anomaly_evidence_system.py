@@ -12,7 +12,8 @@ import numpy as np
 from PIL import Image
 from typing import Dict, Any
 
-EVIDENCE_DIR = r"C:\Users\HP\.gemini\antigravity\scratch\multigalaxial_life\experiments\exp_01_galaxy_morphology\evidence_records"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+EVIDENCE_DIR = os.path.join(BASE_DIR, "evidence_records")
 os.makedirs(EVIDENCE_DIR, exist_ok=True)
 
 

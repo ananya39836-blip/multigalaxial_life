@@ -102,5 +102,57 @@
         "docx_size_bytes": 44789,
         "validated_40_pages": true,
         "timestamp": "2026-10-26T19:15:46.438267"
+    },
+    "Volume_09": {
+        "volume_number": 9,
+        "title": "Radiation, Stellar Activity, and Environmental Risk",
+        "batch": 3,
+        "target_pages": 40,
+        "actual_pages": 40,
+        "pdf_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\volumes\\VOLUME_09_Radiation_Stellar_Activity_and_Environmental_Risk.pdf",
+        "docx_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\docx_sources\\VOLUME_09_Radiation_Stellar_Activity_and_Environmental_Risk.docx",
+        "pdf_size_bytes": 78982,
+        "docx_size_bytes": 44073,
+        "validated_40_pages": true,
+        "timestamp": "2026-10-26T17:04:40.717373+00:00"
+    },
+    "Volume_10": {
+        "volume_number": 10,
+        "title": "Biosignatures and Their False Positives",
+        "batch": 3,
+        "target_pages": 40,
+        "actual_pages": 40,
+        "pdf_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\volumes\\VOLUME_10_Biosignatures_and_Their_False_Positives.pdf",
+        "docx_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\docx_sources\\VOLUME_10_Biosignatures_and_Their_False_Positives.docx",
+        "pdf_size_bytes": 78083,
+        "docx_size_bytes": 43717,
+        "validated_40_pages": true,
+        "timestamp": "2026-10-26T17:04:41.973017+00:00"
+    },
+    "Volume_11": {
+        "volume_number": 11,
+        "title": "Technosignatures and SETI",
+        "batch": 3,
+        "target_pages": 40,
+        "actual_pages": 40,
+        "pdf_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\volumes\\VOLUME_11_Technosignatures_and_SETI.pdf",
+        "docx_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\docx_sources\\VOLUME_11_Technosignatures_and_SETI.docx",
+        "pdf_size_bytes": 76566,
+        "docx_size_bytes": 43689,
+        "validated_40_pages": true,
+        "timestamp": "2026-10-26T17:04:43.265877+00:00"
+    },
+    "Volume_12": {
+        "volume_number": 12,
+        "title": "Statistical Models of Extraterrestrial Life",
+        "batch": 3,
+        "target_pages": 40,
+        "actual_pages": 40,
+        "pdf_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\volumes\\VOLUME_12_Statistical_Models_of_Extraterrestrial_Life.pdf",
+        "docx_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\docx_sources\\VOLUME_12_Statistical_Models_of_Extraterrestrial_Life.docx",
+        "pdf_size_bytes": 77236,
+        "docx_size_bytes": 43513,
+        "validated_40_pages": true,
+        "timestamp": "2026-10-26T17:04:44.619988+00:00"
     }
 }

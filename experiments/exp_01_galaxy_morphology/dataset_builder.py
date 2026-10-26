@@ -12,7 +12,8 @@ import pandas as pd
 from PIL import Image
 import hashlib
 
-DATA_DIR = r"C:\Users\HP\.gemini\antigravity\scratch\multigalaxial_life\experiments\exp_01_galaxy_morphology\data"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(BASE_DIR, "data")
 RAW_IMAGE_DIR = os.path.join(DATA_DIR, "raw_images")
 MANIFEST_PATH = os.path.join(DATA_DIR, "dataset_manifest.json")
 

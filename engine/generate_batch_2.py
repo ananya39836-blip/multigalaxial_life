@@ -16,9 +16,10 @@ import datetime
 from pypdf import PdfReader
 from volume_builder import build_scientific_volume
 
-OUT_PDF_DIR = r"C:\Users\HP\.gemini\antigravity\scratch\multigalaxial_life\volumes"
-OUT_DOCX_DIR = r"C:\Users\HP\.gemini\antigravity\scratch\multigalaxial_life\docx_sources"
-MANIFEST_PATH = r"C:\Users\HP\.gemini\antigravity\scratch\multigalaxial_life\manifest.json"
+REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+OUT_PDF_DIR = os.path.join(REPO_ROOT, "volumes")
+OUT_DOCX_DIR = os.path.join(REPO_ROOT, "docx_sources")
+MANIFEST_PATH = os.path.join(REPO_ROOT, "manifest.json")
 
 os.makedirs(OUT_PDF_DIR, exist_ok=True)
 os.makedirs(OUT_DOCX_DIR, exist_ok=True)
