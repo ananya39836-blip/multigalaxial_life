@@ -1,0 +1,88 @@
+{
+    "model_type": "Classical_CAS_RandomForest",
+    "features": [
+        "Concentration",
+        "Asymmetry",
+        "Smoothness",
+        "Mean_Intensity",
+        "Std_Intensity",
+        "Gini_Approx",
+        "Half_Light_Radius"
+    ],
+    "test_accuracy": 0.5625,
+    "test_macro_f1": 0.5506,
+    "classification_report": {
+        "Elliptical": {
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1-score": 0.5,
+            "support": 4.0
+        },
+        "Spiral": {
+            "precision": 0.6,
+            "recall": 0.75,
+            "f1-score": 0.6666666666666666,
+            "support": 4.0
+        },
+        "Edge-on": {
+            "precision": 0.3333333333333333,
+            "recall": 0.25,
+            "f1-score": 0.2857142857142857,
+            "support": 4.0
+        },
+        "Merger_Anomaly": {
+            "precision": 0.75,
+            "recall": 0.75,
+            "f1-score": 0.75,
+            "support": 4.0
+        },
+        "accuracy": 0.5625,
+        "macro avg": {
+            "precision": 0.5458333333333334,
+            "recall": 0.5625,
+            "f1-score": 0.550595238095238,
+            "support": 16.0
+        },
+        "weighted avg": {
+            "precision": 0.5458333333333334,
+            "recall": 0.5625,
+            "f1-score": 0.550595238095238,
+            "support": 16.0
+        }
+    },
+    "confusion_matrix": [
+        [
+            2,
+            1,
+            1,
+            0
+        ],
+        [
+            0,
+            3,
+            1,
+            0
+        ],
+        [
+            1,
+            1,
+            1,
+            1
+        ],
+        [
+            1,
+            0,
+            0,
+            3
+        ]
+    ],
+    "feature_importances": {
+        "Concentration": 0.1044,
+        "Asymmetry": 0.1134,
+        "Smoothness": 0.1308,
+        "Mean_Intensity": 0.1241,
+        "Std_Intensity": 0.199,
+        "Gini_Approx": 0.1433,
+        "Half_Light_Radius": 0.185
+    }
+}

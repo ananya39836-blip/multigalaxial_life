@@ -1,0 +1,74 @@
+{
+    "record_id": "CAER-0005-20261026211727",
+    "timestamp_utc": "2026-10-26T15:47:27.643996Z",
+    "observation": {
+        "sample_id": "0005",
+        "sky_coordinates": {
+            "ra_deg": 182.451116,
+            "dec_deg": 14.218987
+        },
+        "instrument": "SDSS 2.5m Ritchey-Chretien, Apache Point Observatory",
+        "filters": "u, g, r, i, z photometric bands",
+        "pixel_scale_arcsec": 0.396,
+        "raw_file_sha256": "1e02692b83e1ce651301b40995d452c42c586e247fbe7962c86321fd61f7e501",
+        "raw_image_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0005_Elliptical.jpg"
+    },
+    "model_provenance": {
+        "vision_engine": "Multigalaxial Life AstroNet",
+        "version": "AstroNet-v1.4-DualBranch",
+        "architecture": "4-Layer Deep ConvNet + Latent Spatial Autoencoder (64-dim bottleneck)"
+    },
+    "quantitative_metrics": {
+        "anomaly_score": 66.78,
+        "confidence_interval_95": [
+            62.28,
+            71.28
+        ],
+        "reconstruction_mse": 0.154105,
+        "cas_parameters": {
+            "Concentration": 2.5111966509290973,
+            "Asymmetry": 0.058846116065979004,
+            "Smoothness": 0.06090322881937027,
+            "Mean_Intensity": 36.72210693359375,
+            "Std_Intensity": 23.895526885986328,
+            "Gini_Approx": 0.2933838367462158,
+            "Half_Light_Radius": 25.0
+        },
+        "classification_probabilities": {
+            "Elliptical": 0.9717450737953186,
+            "Spiral": 0.012494736351072788,
+            "Edge-on": 8.456731848127674e-06,
+            "Merger_Anomaly": 0.015751760452985764
+        }
+    },
+    "anomaly_classification": {
+        "assigned_category": "Category C: Statistically Unusual Astrophysical Object",
+        "category_code": "C",
+        "category_d_ruled_out": true,
+        "ruling_out_justification": "Standard astrophysical/instrumental phenomena adequately account for observed flux profile and asymmetry; Category D unresolved status cannot be justified under the scientific falsification protocol."
+    },
+    "diagnostic_hypotheses": [
+        {
+            "hypothesis": "Rare galaxy morphology (e.g. Ultra-diffuse galaxy or Hoag-type ring galaxy)",
+            "plausibility": "High",
+            "confidence": 0.78
+        },
+        {
+            "hypothesis": "Obscured active galactic nucleus (AGN) with asymmetric dust lane",
+            "plausibility": "Moderate",
+            "confidence": 0.55
+        },
+        {
+            "hypothesis": "High-z lensed background galaxy",
+            "plausibility": "Moderate",
+            "confidence": 0.4
+        },
+        {
+            "hypothesis": "Unresolved non-standard morphology",
+            "plausibility": "Low",
+            "confidence": 0.1
+        }
+    ],
+    "ordinary_explanations": "Outlier in standard CAS morphospace; atypical surface brightness profile requiring high-resolution imaging.",
+    "recommended_followup": "Schedule targeted multiband photometry with HST or JWST NIRCam; obtain integral field unit (IFU) spectroscopy."
+}
