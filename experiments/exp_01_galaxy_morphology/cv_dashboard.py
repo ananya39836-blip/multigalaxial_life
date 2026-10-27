@@ -59,6 +59,16 @@ from nasa_trl7_mission_subsystem import (
 )
 from nasa_3d_flight_visualization import NASA3DFlightVisualizer
 
+# Level 2 Scientific Artificial Life Imports
+try:
+    from level_2.environment import PlanetaryTerrain, AtmosphericField, ResourceField, PhysicsSimulator
+    from level_2.organisms import OrganismTemplateLibrary
+    from level_2.animation import Visual3DStudio, GaitGenerator
+    from level_2.experiments import SimulationOrchestrator, ExperimentRunner
+    LEVEL_2_AVAILABLE = True
+except Exception as e:
+    LEVEL_2_AVAILABLE = False
+
 # Set Streamlit Page Configuration
 st.set_page_config(
     page_title="Multigalaxial Life - NASA TRL 7 Computer Vision Engine",
@@ -272,9 +282,10 @@ st.sidebar.caption("Multigalaxial Life NASA-Grade Flight Architecture")
 
 
 # Tabs for Main Interface
-tab_nasa, tab_3d, tab1, tab2, tab3, tab5, tab6 = st.tabs([
+tab_nasa, tab_3d, tab_alife, tab1, tab2, tab3, tab5, tab6 = st.tabs([
     "🚀 NASA TRL 7 Mission Control",
     "🎮 3D Movable LiDAR & Flight Studio",
+    "🧬 Level 2: Artificial Life 3D Studio",
     "🔭 Galaxy Observation Inspector",
     "🧠 Dual-Branch Model Diagnostics & CAM",
     "🚨 Candidate Anomaly Evidence System",
@@ -467,6 +478,190 @@ with tab_3d:
         fig_orb = NASA3DFlightVisualizer.render_3d_spacecraft_orbital_swath()
         st.plotly_chart(fig_orb, use_container_width=True)
         st.caption("Spacecraft polar science orbit (400 km altitude) over a rotating planetary body with active 532 nm LiDAR nadir altimetry laser beam projection.")
+
+
+# ==============================================================================
+# TAB ALIFE: LEVEL 2 SENSOR-DRIVEN ARTIFICIAL LIFE & 3D ECOSYSTEM STUDIO
+# ==============================================================================
+with tab_alife:
+    st.markdown("### 🧬 Level 2: Sensor-Driven Artificial Life & Controllable 3D Ecosystem")
+    st.caption("Multigalaxial Life Level 2 — Closed-Loop Sensorimotor Agents, Virtual RISC Microprocessors, and Procedural 3D Planetary Simulation.")
+
+    st.info("🔬 **Ontological Demarcation (Category D Simulation Construct)**: Hypotheses, synthetic organisms, and virtual RISC-32 microprocessors in this module are algorithmic software simulation models for computational biology and robotics research; they do NOT claim physical hardware realization or empirical detection of extraterrestrial organisms.")
+
+    if not LEVEL_2_AVAILABLE:
+        st.error("Level 2 modules could not be loaded. Please ensure level_2/ package is in the Python search path.")
+    else:
+        # Initialize simulation session state
+        if "l2_sim" not in st.session_state:
+            st.session_state.l2_sim = SimulationOrchestrator(seed=42)
+            st.session_state.l2_sim.spawn_organism("Hexapod_Forager", x=-6.0, y=-6.0, clock_hz=1000.0)
+            st.session_state.l2_sim.spawn_organism("Aquatic_Serpentine", x=8.0, y=10.0, clock_hz=500.0)
+
+        sim = st.session_state.l2_sim
+
+        # Telemetry Ribbon
+        m1, m2, m3, m4, m5 = st.columns(5)
+        alive_count = sum(1 for o in sim.organisms if o.is_alive)
+        total_cycles = sum(p.total_cycles_executed for p in sim.processors.values())
+        total_energy = sum(p.total_compute_energy_j for p in sim.processors.values())
+        total_missed = sum(p.missed_deadlines for p in sim.processors.values())
+        total_instr = sum(p.total_instructions_executed for p in sim.processors.values())
+        deadlines_met_pct = 100.0 * (1.0 - (total_missed / max(1, total_instr))) if total_instr > 0 else 100.0
+
+        m1.metric("Simulation Time", f"{sim.simulation_time:.2f} s", f"Step #{sim.step_count}")
+        m2.metric("Alive Organisms", f"{alive_count} / {len(sim.organisms)}", "Active Agents")
+        m3.metric("Compute Dissipation", f"{total_energy * 1e6:.1f} µJ", "Virtual RISC-32")
+        m4.metric("CPU Cycles", f"{total_cycles:,}", "Clock Synchronized")
+        m5.metric("Deadline Compliance", f"{max(0.0, min(100.0, deadlines_met_pct)):.1f}%", "Real-Time Bound")
+
+        col_l2_ctrl, col_l2_view = st.columns([1, 2.2])
+
+        with col_l2_ctrl:
+            st.markdown("#### 🎮 Simulation Control & Spawner")
+            
+            # Step buttons
+            b_c1, b_c2, b_c3 = st.columns(3)
+            with b_c1:
+                if st.button("▶️ Step +10", use_container_width=True):
+                    for _ in range(10):
+                        sim.step(dt=0.02)
+                    st.rerun()
+            with b_c2:
+                if st.button("⏩ Step +50", use_container_width=True):
+                    for _ in range(50):
+                        sim.step(dt=0.02)
+                    st.rerun()
+            with b_c3:
+                if st.button("🔄 Reset", use_container_width=True):
+                    st.session_state.l2_sim = SimulationOrchestrator(seed=42)
+                    st.session_state.l2_sim.spawn_organism("Hexapod_Forager", x=-6.0, y=-6.0, clock_hz=1000.0)
+                    st.session_state.l2_sim.spawn_organism("Aquatic_Serpentine", x=8.0, y=10.0, clock_hz=500.0)
+                    st.rerun()
+
+            st.markdown("##### 3D Camera & Viewport Perspective")
+            cam_mode = st.radio("Camera Perspective", ["Chase", "Orbit", "First-Person"], horizontal=True, key="l2_cam_radio")
+
+            st.markdown("##### Spawn Hypothetical Organism")
+            spawn_arch = st.selectbox("Morphology Archetype", ["Hexapod_Forager", "Aquatic_Serpentine", "Apex_Predator"], key="l2_arch_sel")
+            sp_x = st.slider("Spawn X Position (m)", -40.0, 40.0, 0.0, 1.0, key="l2_sp_x")
+            sp_y = st.slider("Spawn Y Position (m)", -40.0, 40.0, 0.0, 1.0, key="l2_sp_y")
+            sp_clock = st.select_slider("Virtual RISC Clock Frequency (Hz)", options=[50.0, 100.0, 500.0, 1000.0, 5000.0, 25000.0], value=1000.0, key="l2_sp_clk")
+
+            if st.button("✨ Instantiate Organism", use_container_width=True):
+                new_org = sim.spawn_organism(archetype=spawn_arch, x=sp_x, y=sp_y, clock_hz=sp_clock)
+                st.success(f"Spawned {spawn_arch} ({new_org.id}) at ({sp_x}, {sp_y})")
+                st.rerun()
+
+            # Dynamic Processor Throttling
+            if len(sim.organisms) > 0:
+                st.markdown("##### ⚡ Real-Time Compute Throttling")
+                target_org_id = st.selectbox("Target Organism", [o.id for o in sim.organisms], key="l2_throttle_org")
+                curr_clk = sim.processors[target_org_id].clock_hz
+                new_clk = st.slider("Adjust Clock Hz (Throttling)", 10.0, 10000.0, float(curr_clk), 50.0, key="l2_clk_slider")
+                if new_clk != curr_clk:
+                    sim.processors[target_org_id].set_clock_frequency(new_clk)
+
+        with col_l2_view:
+            st.markdown("#### 🌐 Interactive 3D WebGL Ecosystem Viewport")
+            fig_3d = Visual3DStudio.build_scene_figure(
+                terrain=sim.terrain,
+                organisms=sim.organisms,
+                resource_field=sim.resource_field,
+                camera_mode=cam_mode,
+                time_sec=sim.simulation_time
+            )
+            st.plotly_chart(fig_3d, use_container_width=True)
+            st.caption(f"Viewport Mode: **{cam_mode}**. Rendered via Plotly WebGL. Terrain: 100m x 100m harmonic procedural mesh with reaction-diffusion nutrient fields (cyan surface) and raycast LiDAR cones (orange).")
+
+        # Telemetry Table
+        st.markdown("---")
+        st.markdown("#### 📊 Active Organism Sensorimotor & Microprocessor Telemetry")
+        org_rows = []
+        for o in sim.organisms:
+            proc = sim.processors[o.id]
+            lidar_min = o.sensor_readings.get("lidar_front", {}).get("min_distance", 10.0)
+            chem_val = o.sensor_readings.get("chem", {}).get("concentration_center", 0.0)
+            org_rows.append({
+                "Organism ID": o.id,
+                "Status": "ALIVE :green_circle:" if o.is_alive else "DEAD :black_circle:",
+                "FSM State": o.fsm_state,
+                "Position (X, Y, Z)": f"({o.pos[0]:.1f}, {o.pos[1]:.1f}, {o.pos[2]:.1f})",
+                "Speed (m/s)": f"{np.linalg.norm(o.vel[:2]):.2f}",
+                "Energy (J)": f"{o.physiology.energy:.1f}",
+                "Health": f"{o.physiology.health:.2f}",
+                "LiDAR Min (m)": f"{lidar_min:.2f}",
+                "Nutrient Conc": f"{chem_val:.2f}",
+                "CPU Clock (Hz)": f"{proc.clock_hz:.0f}",
+                "Cycles": proc.total_cycles_executed,
+                "Missed Deadlines": proc.missed_deadlines
+            })
+        st.dataframe(pd.DataFrame(org_rows), use_container_width=True)
+
+        # Landmark Experiment 01 Viewer
+        st.markdown("---")
+        st.markdown("#### 🧪 Landmark Experiment 01: Foraging Efficiency vs. Virtual Compute Budget")
+        st.write("Hypothesis: Decreased virtual processor clock rates introduce scheduling latency and missed control deadlines, impairing chemotactic foraging efficiency.")
+
+        exp_csv = os.path.join(REPO_ROOT, "level_2", "results", "experiment_01_foraging_benchmark.csv")
+        exp_json = os.path.join(REPO_ROOT, "level_2", "results", "experiment_01_summary.json")
+
+        if os.path.exists(exp_csv) and os.path.exists(exp_json):
+            exp_df = pd.read_csv(exp_csv)
+            with open(exp_json, "r") as jf:
+                exp_summary = json.load(jf)
+
+            e_col1, e_col2, e_col3 = st.columns([1, 1, 1.5])
+            with e_col1:
+                st.metric("Total Automated Trials", exp_summary.get("trials_executed", 9))
+            with e_col2:
+                st.metric("Experiment ID", exp_summary.get("experiment_id", "EXP-L2-01"))
+            with e_col3:
+                st.caption(f"**Cryptographic SHA-256 Provenance Hash**:\n`{exp_summary.get('sha256_provenance', '')}`")
+
+            p_col1, p_col2 = st.columns(2)
+            with p_col1:
+                fig_exp_energy = px.box(
+                    exp_df, x="clock_hz", y="net_energy_j",
+                    color="clock_hz",
+                    title="Harvested Net Energy (J) vs. Clock Frequency (Hz)",
+                    labels={"clock_hz": "Virtual CPU Clock (Hz)", "net_energy_j": "Net Energy Ingested (J)"}
+                )
+                fig_exp_energy.update_layout(template="plotly_dark", height=320)
+                st.plotly_chart(fig_exp_energy, use_container_width=True)
+
+            with p_col2:
+                fig_exp_deadlines = px.bar(
+                    exp_df.groupby("clock_hz")["missed_deadlines"].mean().reset_index(),
+                    x="clock_hz", y="missed_deadlines",
+                    color="clock_hz",
+                    title="Mean Missed Deadlines vs. Clock Frequency",
+                    labels={"clock_hz": "Virtual CPU Clock (Hz)", "missed_deadlines": "Missed Control Deadlines"}
+                )
+                fig_exp_deadlines.update_layout(template="plotly_dark", height=320)
+                st.plotly_chart(fig_exp_deadlines, use_container_width=True)
+
+            with st.expander("📄 View Landmark Experiment 01 Raw Trial Records"):
+                st.dataframe(exp_df, use_container_width=True)
+        else:
+            st.info("Run ExperimentRunner.run_foraging_experiment() to populate Landmark Experiment 01 results.")
+
+        # Level 2 40-Volume Encyclopedia Overview
+        st.markdown("---")
+        st.markdown("#### 📚 Multigalaxial Life Level 2: 40-Volume Research Encyclopedia Index")
+        st.write("8 Parts × 5 Volumes = 40 Scientific Research Volumes (1,600 Total Pages; exactly 40 main-body pages per volume).")
+        
+        parts_summary = [
+            {"Part": "Part I", "Scope": "System Architecture & Scientific Foundations", "Volumes": "Vols 1 - 5", "Pages": "200 Pages", "Status": "APPROVED :white_check_mark:"},
+            {"Part": "Part II", "Scope": "3D Planetary Worlds & Environmental Physics", "Volumes": "Vols 6 - 10", "Pages": "200 Pages", "Status": "APPROVED :white_check_mark:"},
+            {"Part": "Part III", "Scope": "Hypothetical Organism Modelling & Artificial Physiology", "Volumes": "Vols 11 - 15", "Pages": "200 Pages", "Status": "APPROVED :white_check_mark:"},
+            {"Part": "Part IV", "Scope": "Simulated Sensors, Perception & SLAM", "Volumes": "Vols 16 - 20", "Pages": "200 Pages", "Status": "APPROVED :white_check_mark:"},
+            {"Part": "Part V", "Scope": "Controllers, Microprocessors & Embedded Systems", "Volumes": "Vols 21 - 25", "Pages": "200 Pages", "Status": "APPROVED :white_check_mark:"},
+            {"Part": "Part VI", "Scope": "Controllable 3D Animation & Gait Kinematics", "Volumes": "Vols 26 - 30", "Pages": "200 Pages", "Status": "APPROVED :white_check_mark:"},
+            {"Part": "Part VII", "Scope": "Ecosystem Dynamics, Multi-Agent & Evolution", "Volumes": "Vols 31 - 35", "Pages": "200 Pages", "Status": "APPROVED :white_check_mark:"},
+            {"Part": "Part VIII", "Scope": "Experimentation, Validation & Reproducibility", "Volumes": "Vols 36 - 40", "Pages": "200 Pages", "Status": "APPROVED :white_check_mark:"}
+        ]
+        st.dataframe(pd.DataFrame(parts_summary), use_container_width=True)
 
 
 # ==============================================================================

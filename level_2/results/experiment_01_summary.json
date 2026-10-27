@@ -1,0 +1,16 @@
+{
+    "experiment_id": "EXP-L2-01-FORAGING",
+    "trials_executed": 9,
+    "csv_path": "level_2/results\\experiment_01_foraging_benchmark.csv",
+    "sha256_provenance": "a6c9f4b254b81c20042502941058284c76e8b26b2a354d7a71d479a1975ede0c",
+    "mean_energy_by_clock": {
+        "50.0": 527.9933333333333,
+        "200.0": 527.9933333333333,
+        "1000.0": 527.9933333333333
+    },
+    "mean_deadlines_by_clock": {
+        "50.0": 200.0,
+        "200.0": 200.0,
+        "1000.0": 200.0
+    }
+}
