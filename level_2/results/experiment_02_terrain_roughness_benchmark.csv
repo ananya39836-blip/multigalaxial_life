@@ -1,0 +1,4 @@
+roughness,sim_time,org1_dist,org2_dist,all_alive
+0.5,3.0,1.78,0.62,True
+1.0,3.0,1.78,0.62,True
+2.0,3.0,1.78,0.62,True

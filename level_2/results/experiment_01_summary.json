@@ -1,16 +1,18 @@
 {
     "experiment_id": "EXP-L2-01-FORAGING",
-    "trials_executed": 9,
-    "csv_path": "level_2/results\\experiment_01_foraging_benchmark.csv",
-    "sha256_provenance": "a6c9f4b254b81c20042502941058284c76e8b26b2a354d7a71d479a1975ede0c",
+    "trials_executed": 12,
+    "csv_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\level_2\\results\\experiment_01_foraging_benchmark.csv",
+    "sha256_provenance": "61e9437c25b7c218f15b9f330c8e587f83df39864254f38b988b5ba3e769d4f9",
     "mean_energy_by_clock": {
         "50.0": 527.9933333333333,
         "200.0": 527.9933333333333,
-        "1000.0": 527.9933333333333
+        "1000.0": 527.9933333333333,
+        "25000.0": 527.9933333333333
     },
     "mean_deadlines_by_clock": {
         "50.0": 200.0,
         "200.0": 200.0,
-        "1000.0": 200.0
+        "1000.0": 200.0,
+        "25000.0": 0.0
     }
 }
