@@ -195,6 +195,19 @@ class AutonomousFDIREngine:
             "seu_cosmic_ray_rate_max": 25.0  # hits per frame
         }
 
+    @classmethod
+    def monitor_flight_health(cls, telemetry: Dict[str, float]) -> Dict[str, Any]:
+        """Classmethod alias for flight health monitoring."""
+        instance = cls()
+        res = instance.evaluate_telemetry_health(telemetry)
+        return {
+            "overall_status": res["health_status"],
+            "health_status": res["health_status"],
+            "fdir_actions": res["autonomous_recovery_actions"],
+            "faults": res["faults"],
+            "fault_count": res["fault_count"]
+        }
+
     def evaluate_telemetry_health(self, telemetry: Dict[str, float]) -> Dict[str, Any]:
         """
         Evaluates real-time sensor metrics against flight thresholds and issues recovery actions.
@@ -315,6 +328,11 @@ class NASATRL7VerificationMatrix:
     Formal NASA Systems Engineering Verification & Validation (V&V) Matrix.
     Catalogs 50 operational requirements mapped to automated unit/integration tests.
     """
+
+    @staticmethod
+    def get_verification_records() -> List[Dict[str, str]]:
+        """Alias for get_formal_vv_requirements."""
+        return NASATRL7VerificationMatrix.get_formal_vv_requirements()
 
     @staticmethod
     def get_formal_vv_requirements() -> List[Dict[str, str]]:

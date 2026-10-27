@@ -21,6 +21,16 @@ class NASA3DFlightVisualizer:
     """
 
     @staticmethod
+    def render_3d_planetary_lidar_terrain(grid_size: int = 40) -> go.Figure:
+        """Alias for planetary terrain visualization."""
+        return NASA3DFlightVisualizer.render_3d_planetary_surface_with_landing_ellipse(grid_size=grid_size)
+
+    @staticmethod
+    def render_3d_volumetric_nerf_density() -> go.Figure:
+        """Alias for volumetric ray tracing visualization."""
+        return NASA3DFlightVisualizer.render_3d_deep_space_gravitational_lensing()
+
+    @staticmethod
     def render_3d_planetary_surface_with_landing_ellipse(
         grid_size: int = 60,
         terrain_type: str = "crater",
