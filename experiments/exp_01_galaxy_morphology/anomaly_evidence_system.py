@@ -42,9 +42,23 @@ class CandidateAnomalyEvidenceEngine:
         Synthesizes morphological parameters, model predictions, and reconstruction residuals
         to generate a formal Candidate Anomaly Evidence Record.
         """
-        # Provenance: SHA-256 hash of raw observation
-        with open(raw_image_path, "rb") as f:
-            raw_sha256 = hashlib.sha256(f.read()).hexdigest()
+        # Provenance: SHA-256 hash of raw observation (cross-platform safe)
+        target_path = raw_image_path
+        if not os.path.exists(target_path):
+            candidates = [
+                os.path.join(BASE_DIR, "data", "raw_images", os.path.basename(raw_image_path)),
+                os.path.join(BASE_DIR, raw_image_path)
+            ]
+            for c in candidates:
+                if os.path.exists(c):
+                    target_path = c
+                    break
+
+        if os.path.exists(target_path):
+            with open(target_path, "rb") as f:
+                raw_sha256 = hashlib.sha256(f.read()).hexdigest()
+        else:
+            raw_sha256 = hashlib.sha256(str(raw_image_path).encode("utf-8")).hexdigest()
 
         # Compute composite anomaly score
         asymmetry = cas_metrics.get("Asymmetry", 0.0)

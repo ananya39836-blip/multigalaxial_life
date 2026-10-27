@@ -16,7 +16,7 @@
         {
             "sample_id": 1,
             "filename": "sdss_gal_0001_Elliptical.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0001_Elliptical.jpg",
+            "file_path": "data/raw_images/sdss_gal_0001_Elliptical.jpg",
             "ra": 180.125897,
             "dec": 12.584162,
             "morphology": "Elliptical",
@@ -30,7 +30,7 @@
         {
             "sample_id": 2,
             "filename": "sdss_gal_0002_Elliptical.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0002_Elliptical.jpg",
+            "file_path": "data/raw_images/sdss_gal_0002_Elliptical.jpg",
             "ra": 180.134048,
             "dec": 12.593823,
             "morphology": "Elliptical",
@@ -44,7 +44,7 @@
         {
             "sample_id": 3,
             "filename": "sdss_gal_0003_Elliptical.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0003_Elliptical.jpg",
+            "file_path": "data/raw_images/sdss_gal_0003_Elliptical.jpg",
             "ra": 180.142234,
             "dec": 12.600552,
             "morphology": "Elliptical",
@@ -58,7 +58,7 @@
         {
             "sample_id": 4,
             "filename": "sdss_gal_0004_Elliptical.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0004_Elliptical.jpg",
+            "file_path": "data/raw_images/sdss_gal_0004_Elliptical.jpg",
             "ra": 180.149027,
             "dec": 12.609185,
             "morphology": "Elliptical",
@@ -72,7 +72,7 @@
         {
             "sample_id": 5,
             "filename": "sdss_gal_0005_Elliptical.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0005_Elliptical.jpg",
+            "file_path": "data/raw_images/sdss_gal_0005_Elliptical.jpg",
             "ra": 182.451116,
             "dec": 14.218987,
             "morphology": "Elliptical",
@@ -86,7 +86,7 @@
         {
             "sample_id": 6,
             "filename": "sdss_gal_0006_Elliptical.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0006_Elliptical.jpg",
+            "file_path": "data/raw_images/sdss_gal_0006_Elliptical.jpg",
             "ra": 182.458632,
             "dec": 14.226929,
             "morphology": "Elliptical",
@@ -100,7 +100,7 @@
         {
             "sample_id": 7,
             "filename": "sdss_gal_0007_Elliptical.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0007_Elliptical.jpg",
+            "file_path": "data/raw_images/sdss_gal_0007_Elliptical.jpg",
             "ra": 182.465964,
             "dec": 14.233805,
             "morphology": "Elliptical",
@@ -114,7 +114,7 @@
         {
             "sample_id": 8,
             "filename": "sdss_gal_0008_Elliptical.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0008_Elliptical.jpg",
+            "file_path": "data/raw_images/sdss_gal_0008_Elliptical.jpg",
             "ra": 182.47656,
             "dec": 14.243773,
             "morphology": "Elliptical",
@@ -128,7 +128,7 @@
         {
             "sample_id": 9,
             "filename": "sdss_gal_0009_Elliptical.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0009_Elliptical.jpg",
+            "file_path": "data/raw_images/sdss_gal_0009_Elliptical.jpg",
             "ra": 179.880867,
             "dec": 11.955037,
             "morphology": "Elliptical",
@@ -142,7 +142,7 @@
         {
             "sample_id": 10,
             "filename": "sdss_gal_0010_Elliptical.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0010_Elliptical.jpg",
+            "file_path": "data/raw_images/sdss_gal_0010_Elliptical.jpg",
             "ra": 179.888606,
             "dec": 11.962286,
             "morphology": "Elliptical",
@@ -156,7 +156,7 @@
         {
             "sample_id": 11,
             "filename": "sdss_gal_0011_Elliptical.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0011_Elliptical.jpg",
+            "file_path": "data/raw_images/sdss_gal_0011_Elliptical.jpg",
             "ra": 179.900887,
             "dec": 11.967694,
             "morphology": "Elliptical",
@@ -170,7 +170,7 @@
         {
             "sample_id": 12,
             "filename": "sdss_gal_0012_Elliptical.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0012_Elliptical.jpg",
+            "file_path": "data/raw_images/sdss_gal_0012_Elliptical.jpg",
             "ra": 179.907087,
             "dec": 11.976169,
             "morphology": "Elliptical",
@@ -184,7 +184,7 @@
         {
             "sample_id": 13,
             "filename": "sdss_gal_0013_Elliptical.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0013_Elliptical.jpg",
+            "file_path": "data/raw_images/sdss_gal_0013_Elliptical.jpg",
             "ra": 185.221775,
             "dec": 13.783521,
             "morphology": "Elliptical",
@@ -198,7 +198,7 @@
         {
             "sample_id": 14,
             "filename": "sdss_gal_0014_Elliptical.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0014_Elliptical.jpg",
+            "file_path": "data/raw_images/sdss_gal_0014_Elliptical.jpg",
             "ra": 185.228352,
             "dec": 13.793375,
             "morphology": "Elliptical",
@@ -212,7 +212,7 @@
         {
             "sample_id": 15,
             "filename": "sdss_gal_0015_Elliptical.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0015_Elliptical.jpg",
+            "file_path": "data/raw_images/sdss_gal_0015_Elliptical.jpg",
             "ra": 185.236064,
             "dec": 13.800642,
             "morphology": "Elliptical",
@@ -226,7 +226,7 @@
         {
             "sample_id": 16,
             "filename": "sdss_gal_0016_Elliptical.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0016_Elliptical.jpg",
+            "file_path": "data/raw_images/sdss_gal_0016_Elliptical.jpg",
             "ra": 185.243147,
             "dec": 13.808433,
             "morphology": "Elliptical",
@@ -240,7 +240,7 @@
         {
             "sample_id": 17,
             "filename": "sdss_gal_0017_Elliptical.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0017_Elliptical.jpg",
+            "file_path": "data/raw_images/sdss_gal_0017_Elliptical.jpg",
             "ra": 181.654937,
             "dec": 10.877152,
             "morphology": "Elliptical",
@@ -254,7 +254,7 @@
         {
             "sample_id": 18,
             "filename": "sdss_gal_0018_Elliptical.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0018_Elliptical.jpg",
+            "file_path": "data/raw_images/sdss_gal_0018_Elliptical.jpg",
             "ra": 181.662557,
             "dec": 10.885432,
             "morphology": "Elliptical",
@@ -268,7 +268,7 @@
         {
             "sample_id": 19,
             "filename": "sdss_gal_0019_Elliptical.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0019_Elliptical.jpg",
+            "file_path": "data/raw_images/sdss_gal_0019_Elliptical.jpg",
             "ra": 181.669016,
             "dec": 10.891144,
             "morphology": "Elliptical",
@@ -282,7 +282,7 @@
         {
             "sample_id": 20,
             "filename": "sdss_gal_0020_Elliptical.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0020_Elliptical.jpg",
+            "file_path": "data/raw_images/sdss_gal_0020_Elliptical.jpg",
             "ra": 181.677628,
             "dec": 10.900757,
             "morphology": "Elliptical",
@@ -296,7 +296,7 @@
         {
             "sample_id": 21,
             "filename": "sdss_gal_0021_Elliptical.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0021_Elliptical.jpg",
+            "file_path": "data/raw_images/sdss_gal_0021_Elliptical.jpg",
             "ra": 183.90911,
             "dec": 15.112199,
             "morphology": "Elliptical",
@@ -310,7 +310,7 @@
         {
             "sample_id": 22,
             "filename": "sdss_gal_0022_Elliptical.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0022_Elliptical.jpg",
+            "file_path": "data/raw_images/sdss_gal_0022_Elliptical.jpg",
             "ra": 183.91925,
             "dec": 15.121261,
             "morphology": "Elliptical",
@@ -324,7 +324,7 @@
         {
             "sample_id": 23,
             "filename": "sdss_gal_0023_Elliptical.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0023_Elliptical.jpg",
+            "file_path": "data/raw_images/sdss_gal_0023_Elliptical.jpg",
             "ra": 183.925802,
             "dec": 15.129132,
             "morphology": "Elliptical",
@@ -338,7 +338,7 @@
         {
             "sample_id": 24,
             "filename": "sdss_gal_0024_Elliptical.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0024_Elliptical.jpg",
+            "file_path": "data/raw_images/sdss_gal_0024_Elliptical.jpg",
             "ra": 183.934009,
             "dec": 15.136596,
             "morphology": "Elliptical",
@@ -352,7 +352,7 @@
         {
             "sample_id": 25,
             "filename": "sdss_gal_0025_Elliptical.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0025_Elliptical.jpg",
+            "file_path": "data/raw_images/sdss_gal_0025_Elliptical.jpg",
             "ra": 184.500592,
             "dec": 12.001093,
             "morphology": "Elliptical",
@@ -366,7 +366,7 @@
         {
             "sample_id": 26,
             "filename": "sdss_gal_0026_Elliptical.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0026_Elliptical.jpg",
+            "file_path": "data/raw_images/sdss_gal_0026_Elliptical.jpg",
             "ra": 184.510894,
             "dec": 12.010564,
             "morphology": "Elliptical",
@@ -380,7 +380,7 @@
         {
             "sample_id": 27,
             "filename": "sdss_gal_0027_Elliptical.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0027_Elliptical.jpg",
+            "file_path": "data/raw_images/sdss_gal_0027_Elliptical.jpg",
             "ra": 184.518698,
             "dec": 12.018042,
             "morphology": "Elliptical",
@@ -394,7 +394,7 @@
         {
             "sample_id": 28,
             "filename": "sdss_gal_0028_Elliptical.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0028_Elliptical.jpg",
+            "file_path": "data/raw_images/sdss_gal_0028_Elliptical.jpg",
             "ra": 184.525699,
             "dec": 12.025048,
             "morphology": "Elliptical",
@@ -408,7 +408,7 @@
         {
             "sample_id": 29,
             "filename": "sdss_gal_0029_Elliptical.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0029_Elliptical.jpg",
+            "file_path": "data/raw_images/sdss_gal_0029_Elliptical.jpg",
             "ra": 178.43223,
             "dec": 16.321536,
             "morphology": "Elliptical",
@@ -422,7 +422,7 @@
         {
             "sample_id": 30,
             "filename": "sdss_gal_0030_Elliptical.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0030_Elliptical.jpg",
+            "file_path": "data/raw_images/sdss_gal_0030_Elliptical.jpg",
             "ra": 178.439409,
             "dec": 16.328434,
             "morphology": "Elliptical",
@@ -436,7 +436,7 @@
         {
             "sample_id": 31,
             "filename": "sdss_gal_0031_Elliptical.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0031_Elliptical.jpg",
+            "file_path": "data/raw_images/sdss_gal_0031_Elliptical.jpg",
             "ra": 178.446933,
             "dec": 16.33787,
             "morphology": "Elliptical",
@@ -450,7 +450,7 @@
         {
             "sample_id": 32,
             "filename": "sdss_gal_0032_Elliptical.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0032_Elliptical.jpg",
+            "file_path": "data/raw_images/sdss_gal_0032_Elliptical.jpg",
             "ra": 178.455646,
             "dec": 16.342754,
             "morphology": "Elliptical",
@@ -464,7 +464,7 @@
         {
             "sample_id": 33,
             "filename": "sdss_gal_0033_Spiral.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0033_Spiral.jpg",
+            "file_path": "data/raw_images/sdss_gal_0033_Spiral.jpg",
             "ra": 186.254107,
             "dec": 12.89335,
             "morphology": "Spiral",
@@ -478,7 +478,7 @@
         {
             "sample_id": 34,
             "filename": "sdss_gal_0034_Spiral.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0034_Spiral.jpg",
+            "file_path": "data/raw_images/sdss_gal_0034_Spiral.jpg",
             "ra": 186.26121,
             "dec": 12.900818,
             "morphology": "Spiral",
@@ -492,7 +492,7 @@
         {
             "sample_id": 35,
             "filename": "sdss_gal_0035_Spiral.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0035_Spiral.jpg",
+            "file_path": "data/raw_images/sdss_gal_0035_Spiral.jpg",
             "ra": 186.272654,
             "dec": 12.909745,
             "morphology": "Spiral",
@@ -506,7 +506,7 @@
         {
             "sample_id": 36,
             "filename": "sdss_gal_0036_Spiral.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0036_Spiral.jpg",
+            "file_path": "data/raw_images/sdss_gal_0036_Spiral.jpg",
             "ra": 186.277664,
             "dec": 12.920249,
             "morphology": "Spiral",
@@ -520,7 +520,7 @@
         {
             "sample_id": 37,
             "filename": "sdss_gal_0037_Spiral.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0037_Spiral.jpg",
+            "file_path": "data/raw_images/sdss_gal_0037_Spiral.jpg",
             "ra": 188.11322,
             "dec": 14.50215,
             "morphology": "Spiral",
@@ -534,7 +534,7 @@
         {
             "sample_id": 38,
             "filename": "sdss_gal_0038_Spiral.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0038_Spiral.jpg",
+            "file_path": "data/raw_images/sdss_gal_0038_Spiral.jpg",
             "ra": 188.120489,
             "dec": 14.50966,
             "morphology": "Spiral",
@@ -548,7 +548,7 @@
         {
             "sample_id": 39,
             "filename": "sdss_gal_0039_Spiral.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0039_Spiral.jpg",
+            "file_path": "data/raw_images/sdss_gal_0039_Spiral.jpg",
             "ra": 188.127762,
             "dec": 14.51732,
             "morphology": "Spiral",
@@ -562,7 +562,7 @@
         {
             "sample_id": 40,
             "filename": "sdss_gal_0040_Spiral.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0040_Spiral.jpg",
+            "file_path": "data/raw_images/sdss_gal_0040_Spiral.jpg",
             "ra": 188.135943,
             "dec": 14.525974,
             "morphology": "Spiral",
@@ -576,7 +576,7 @@
         {
             "sample_id": 41,
             "filename": "sdss_gal_0041_Spiral.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0041_Spiral.jpg",
+            "file_path": "data/raw_images/sdss_gal_0041_Spiral.jpg",
             "ra": 187.95308,
             "dec": 11.233427,
             "morphology": "Spiral",
@@ -590,7 +590,7 @@
         {
             "sample_id": 42,
             "filename": "sdss_gal_0042_Spiral.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0042_Spiral.jpg",
+            "file_path": "data/raw_images/sdss_gal_0042_Spiral.jpg",
             "ra": 187.962635,
             "dec": 11.24009,
             "morphology": "Spiral",
@@ -604,7 +604,7 @@
         {
             "sample_id": 43,
             "filename": "sdss_gal_0043_Spiral.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0043_Spiral.jpg",
+            "file_path": "data/raw_images/sdss_gal_0043_Spiral.jpg",
             "ra": 187.970892,
             "dec": 11.247495,
             "morphology": "Spiral",
@@ -618,7 +618,7 @@
         {
             "sample_id": 44,
             "filename": "sdss_gal_0044_Spiral.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0044_Spiral.jpg",
+            "file_path": "data/raw_images/sdss_gal_0044_Spiral.jpg",
             "ra": 187.978114,
             "dec": 11.254959,
             "morphology": "Spiral",
@@ -632,7 +632,7 @@
         {
             "sample_id": 45,
             "filename": "sdss_gal_0045_Spiral.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0045_Spiral.jpg",
+            "file_path": "data/raw_images/sdss_gal_0045_Spiral.jpg",
             "ra": 189.653008,
             "dec": 13.98257,
             "morphology": "Spiral",
@@ -646,7 +646,7 @@
         {
             "sample_id": 46,
             "filename": "sdss_gal_0046_Spiral.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0046_Spiral.jpg",
+            "file_path": "data/raw_images/sdss_gal_0046_Spiral.jpg",
             "ra": 189.66239,
             "dec": 13.99282,
             "morphology": "Spiral",
@@ -660,7 +660,7 @@
         {
             "sample_id": 47,
             "filename": "sdss_gal_0047_Spiral.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0047_Spiral.jpg",
+            "file_path": "data/raw_images/sdss_gal_0047_Spiral.jpg",
             "ra": 189.670677,
             "dec": 14.001371,
             "morphology": "Spiral",
@@ -674,7 +674,7 @@
         {
             "sample_id": 48,
             "filename": "sdss_gal_0048_Spiral.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0048_Spiral.jpg",
+            "file_path": "data/raw_images/sdss_gal_0048_Spiral.jpg",
             "ra": 189.679509,
             "dec": 14.006563,
             "morphology": "Spiral",
@@ -688,7 +688,7 @@
         {
             "sample_id": 49,
             "filename": "sdss_gal_0049_Spiral.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0049_Spiral.jpg",
+            "file_path": "data/raw_images/sdss_gal_0049_Spiral.jpg",
             "ra": 186.991894,
             "dec": 15.443158,
             "morphology": "Spiral",
@@ -702,7 +702,7 @@
         {
             "sample_id": 50,
             "filename": "sdss_gal_0050_Spiral.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0050_Spiral.jpg",
+            "file_path": "data/raw_images/sdss_gal_0050_Spiral.jpg",
             "ra": 187.000046,
             "dec": 15.449733,
             "morphology": "Spiral",
@@ -716,7 +716,7 @@
         {
             "sample_id": 51,
             "filename": "sdss_gal_0051_Spiral.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0051_Spiral.jpg",
+            "file_path": "data/raw_images/sdss_gal_0051_Spiral.jpg",
             "ra": 187.00838,
             "dec": 15.455663,
             "morphology": "Spiral",
@@ -730,7 +730,7 @@
         {
             "sample_id": 52,
             "filename": "sdss_gal_0052_Spiral.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0052_Spiral.jpg",
+            "file_path": "data/raw_images/sdss_gal_0052_Spiral.jpg",
             "ra": 187.015036,
             "dec": 15.465153,
             "morphology": "Spiral",
@@ -744,7 +744,7 @@
         {
             "sample_id": 53,
             "filename": "sdss_gal_0053_Spiral.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0053_Spiral.jpg",
+            "file_path": "data/raw_images/sdss_gal_0053_Spiral.jpg",
             "ra": 190.231953,
             "dec": 12.113907,
             "morphology": "Spiral",
@@ -758,7 +758,7 @@
         {
             "sample_id": 54,
             "filename": "sdss_gal_0054_Spiral.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0054_Spiral.jpg",
+            "file_path": "data/raw_images/sdss_gal_0054_Spiral.jpg",
             "ra": 190.240986,
             "dec": 12.122064,
             "morphology": "Spiral",
@@ -772,7 +772,7 @@
         {
             "sample_id": 55,
             "filename": "sdss_gal_0055_Spiral.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0055_Spiral.jpg",
+            "file_path": "data/raw_images/sdss_gal_0055_Spiral.jpg",
             "ra": 190.247139,
             "dec": 12.131011,
             "morphology": "Spiral",
@@ -786,7 +786,7 @@
         {
             "sample_id": 56,
             "filename": "sdss_gal_0056_Spiral.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0056_Spiral.jpg",
+            "file_path": "data/raw_images/sdss_gal_0056_Spiral.jpg",
             "ra": 190.254633,
             "dec": 12.139025,
             "morphology": "Spiral",
@@ -800,7 +800,7 @@
         {
             "sample_id": 57,
             "filename": "sdss_gal_0057_Spiral.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0057_Spiral.jpg",
+            "file_path": "data/raw_images/sdss_gal_0057_Spiral.jpg",
             "ra": 185.87536,
             "dec": 16.784144,
             "morphology": "Spiral",
@@ -814,7 +814,7 @@
         {
             "sample_id": 58,
             "filename": "sdss_gal_0058_Spiral.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0058_Spiral.jpg",
+            "file_path": "data/raw_images/sdss_gal_0058_Spiral.jpg",
             "ra": 185.882686,
             "dec": 16.791499,
             "morphology": "Spiral",
@@ -828,7 +828,7 @@
         {
             "sample_id": 59,
             "filename": "sdss_gal_0059_Spiral.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0059_Spiral.jpg",
+            "file_path": "data/raw_images/sdss_gal_0059_Spiral.jpg",
             "ra": 185.891569,
             "dec": 16.799885,
             "morphology": "Spiral",
@@ -842,7 +842,7 @@
         {
             "sample_id": 60,
             "filename": "sdss_gal_0060_Spiral.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0060_Spiral.jpg",
+            "file_path": "data/raw_images/sdss_gal_0060_Spiral.jpg",
             "ra": 185.898096,
             "dec": 16.807952,
             "morphology": "Spiral",
@@ -856,7 +856,7 @@
         {
             "sample_id": 61,
             "filename": "sdss_gal_0061_Spiral.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0061_Spiral.jpg",
+            "file_path": "data/raw_images/sdss_gal_0061_Spiral.jpg",
             "ra": 189.102329,
             "dec": 11.000005,
             "morphology": "Spiral",
@@ -870,7 +870,7 @@
         {
             "sample_id": 62,
             "filename": "sdss_gal_0062_Spiral.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0062_Spiral.jpg",
+            "file_path": "data/raw_images/sdss_gal_0062_Spiral.jpg",
             "ra": 189.110925,
             "dec": 11.006722,
             "morphology": "Spiral",
@@ -884,7 +884,7 @@
         {
             "sample_id": 63,
             "filename": "sdss_gal_0063_Spiral.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0063_Spiral.jpg",
+            "file_path": "data/raw_images/sdss_gal_0063_Spiral.jpg",
             "ra": 189.116997,
             "dec": 11.014349,
             "morphology": "Spiral",
@@ -898,7 +898,7 @@
         {
             "sample_id": 64,
             "filename": "sdss_gal_0064_Spiral.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0064_Spiral.jpg",
+            "file_path": "data/raw_images/sdss_gal_0064_Spiral.jpg",
             "ra": 189.125361,
             "dec": 11.02343,
             "morphology": "Spiral",
@@ -912,7 +912,7 @@
         {
             "sample_id": 65,
             "filename": "sdss_gal_0065_Edge-on.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0065_Edge-on.jpg",
+            "file_path": "data/raw_images/sdss_gal_0065_Edge-on.jpg",
             "ra": 191.450855,
             "dec": 13.253849,
             "morphology": "Edge-on",
@@ -926,7 +926,7 @@
         {
             "sample_id": 66,
             "filename": "sdss_gal_0066_Edge-on.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0066_Edge-on.jpg",
+            "file_path": "data/raw_images/sdss_gal_0066_Edge-on.jpg",
             "ra": 191.458669,
             "dec": 13.260905,
             "morphology": "Edge-on",
@@ -940,7 +940,7 @@
         {
             "sample_id": 67,
             "filename": "sdss_gal_0067_Edge-on.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0067_Edge-on.jpg",
+            "file_path": "data/raw_images/sdss_gal_0067_Edge-on.jpg",
             "ra": 191.464977,
             "dec": 13.268945,
             "morphology": "Edge-on",
@@ -954,7 +954,7 @@
         {
             "sample_id": 68,
             "filename": "sdss_gal_0068_Edge-on.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0068_Edge-on.jpg",
+            "file_path": "data/raw_images/sdss_gal_0068_Edge-on.jpg",
             "ra": 191.475325,
             "dec": 13.278706,
             "morphology": "Edge-on",
@@ -968,7 +968,7 @@
         {
             "sample_id": 69,
             "filename": "sdss_gal_0069_Edge-on.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0069_Edge-on.jpg",
+            "file_path": "data/raw_images/sdss_gal_0069_Edge-on.jpg",
             "ra": 192.320336,
             "dec": 15.653438,
             "morphology": "Edge-on",
@@ -982,7 +982,7 @@
         {
             "sample_id": 70,
             "filename": "sdss_gal_0070_Edge-on.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0070_Edge-on.jpg",
+            "file_path": "data/raw_images/sdss_gal_0070_Edge-on.jpg",
             "ra": 192.328916,
             "dec": 15.6615,
             "morphology": "Edge-on",
@@ -996,7 +996,7 @@
         {
             "sample_id": 71,
             "filename": "sdss_gal_0071_Edge-on.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0071_Edge-on.jpg",
+            "file_path": "data/raw_images/sdss_gal_0071_Edge-on.jpg",
             "ra": 192.337398,
             "dec": 15.671075,
             "morphology": "Edge-on",
@@ -1010,7 +1010,7 @@
         {
             "sample_id": 72,
             "filename": "sdss_gal_0072_Edge-on.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0072_Edge-on.jpg",
+            "file_path": "data/raw_images/sdss_gal_0072_Edge-on.jpg",
             "ra": 192.344894,
             "dec": 15.679011,
             "morphology": "Edge-on",
@@ -1024,7 +1024,7 @@
         {
             "sample_id": 73,
             "filename": "sdss_gal_0073_Edge-on.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0073_Edge-on.jpg",
+            "file_path": "data/raw_images/sdss_gal_0073_Edge-on.jpg",
             "ra": 190.997577,
             "dec": 11.783657,
             "morphology": "Edge-on",
@@ -1038,7 +1038,7 @@
         {
             "sample_id": 74,
             "filename": "sdss_gal_0074_Edge-on.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0074_Edge-on.jpg",
+            "file_path": "data/raw_images/sdss_gal_0074_Edge-on.jpg",
             "ra": 191.008485,
             "dec": 11.793012,
             "morphology": "Edge-on",
@@ -1052,7 +1052,7 @@
         {
             "sample_id": 75,
             "filename": "sdss_gal_0075_Edge-on.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0075_Edge-on.jpg",
+            "file_path": "data/raw_images/sdss_gal_0075_Edge-on.jpg",
             "ra": 191.012713,
             "dec": 11.801656,
             "morphology": "Edge-on",
@@ -1066,7 +1066,7 @@
         {
             "sample_id": 76,
             "filename": "sdss_gal_0076_Edge-on.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0076_Edge-on.jpg",
+            "file_path": "data/raw_images/sdss_gal_0076_Edge-on.jpg",
             "ra": 191.024952,
             "dec": 11.807752,
             "morphology": "Edge-on",
@@ -1080,7 +1080,7 @@
         {
             "sample_id": 77,
             "filename": "sdss_gal_0077_Edge-on.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0077_Edge-on.jpg",
+            "file_path": "data/raw_images/sdss_gal_0077_Edge-on.jpg",
             "ra": 193.11189,
             "dec": 14.12623,
             "morphology": "Edge-on",
@@ -1094,7 +1094,7 @@
         {
             "sample_id": 78,
             "filename": "sdss_gal_0078_Edge-on.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0078_Edge-on.jpg",
+            "file_path": "data/raw_images/sdss_gal_0078_Edge-on.jpg",
             "ra": 193.121599,
             "dec": 14.133609,
             "morphology": "Edge-on",
@@ -1108,7 +1108,7 @@
         {
             "sample_id": 79,
             "filename": "sdss_gal_0079_Edge-on.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0079_Edge-on.jpg",
+            "file_path": "data/raw_images/sdss_gal_0079_Edge-on.jpg",
             "ra": 193.128187,
             "dec": 14.141846,
             "morphology": "Edge-on",
@@ -1122,7 +1122,7 @@
         {
             "sample_id": 80,
             "filename": "sdss_gal_0080_Edge-on.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0080_Edge-on.jpg",
+            "file_path": "data/raw_images/sdss_gal_0080_Edge-on.jpg",
             "ra": 193.138455,
             "dec": 14.151054,
             "morphology": "Edge-on",
@@ -1136,7 +1136,7 @@
         {
             "sample_id": 81,
             "filename": "sdss_gal_0081_Edge-on.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0081_Edge-on.jpg",
+            "file_path": "data/raw_images/sdss_gal_0081_Edge-on.jpg",
             "ra": 191.885968,
             "dec": 16.221147,
             "morphology": "Edge-on",
@@ -1150,7 +1150,7 @@
         {
             "sample_id": 82,
             "filename": "sdss_gal_0082_Edge-on.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0082_Edge-on.jpg",
+            "file_path": "data/raw_images/sdss_gal_0082_Edge-on.jpg",
             "ra": 191.892313,
             "dec": 16.229145,
             "morphology": "Edge-on",
@@ -1164,7 +1164,7 @@
         {
             "sample_id": 83,
             "filename": "sdss_gal_0083_Edge-on.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0083_Edge-on.jpg",
+            "file_path": "data/raw_images/sdss_gal_0083_Edge-on.jpg",
             "ra": 191.899496,
             "dec": 16.238088,
             "morphology": "Edge-on",
@@ -1178,7 +1178,7 @@
         {
             "sample_id": 84,
             "filename": "sdss_gal_0084_Edge-on.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0084_Edge-on.jpg",
+            "file_path": "data/raw_images/sdss_gal_0084_Edge-on.jpg",
             "ra": 191.907451,
             "dec": 16.24453,
             "morphology": "Edge-on",
@@ -1192,7 +1192,7 @@
         {
             "sample_id": 85,
             "filename": "sdss_gal_0085_Edge-on.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0085_Edge-on.jpg",
+            "file_path": "data/raw_images/sdss_gal_0085_Edge-on.jpg",
             "ra": 194.253684,
             "dec": 12.87408,
             "morphology": "Edge-on",
@@ -1206,7 +1206,7 @@
         {
             "sample_id": 86,
             "filename": "sdss_gal_0086_Edge-on.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0086_Edge-on.jpg",
+            "file_path": "data/raw_images/sdss_gal_0086_Edge-on.jpg",
             "ra": 194.261086,
             "dec": 12.881967,
             "morphology": "Edge-on",
@@ -1220,7 +1220,7 @@
         {
             "sample_id": 87,
             "filename": "sdss_gal_0087_Edge-on.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0087_Edge-on.jpg",
+            "file_path": "data/raw_images/sdss_gal_0087_Edge-on.jpg",
             "ra": 194.268646,
             "dec": 12.891384,
             "morphology": "Edge-on",
@@ -1234,7 +1234,7 @@
         {
             "sample_id": 88,
             "filename": "sdss_gal_0088_Edge-on.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0088_Edge-on.jpg",
+            "file_path": "data/raw_images/sdss_gal_0088_Edge-on.jpg",
             "ra": 194.27795,
             "dec": 12.898858,
             "morphology": "Edge-on",
@@ -1248,7 +1248,7 @@
         {
             "sample_id": 89,
             "filename": "sdss_gal_0089_Edge-on.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0089_Edge-on.jpg",
+            "file_path": "data/raw_images/sdss_gal_0089_Edge-on.jpg",
             "ra": 192.741914,
             "dec": 10.553799,
             "morphology": "Edge-on",
@@ -1262,7 +1262,7 @@
         {
             "sample_id": 90,
             "filename": "sdss_gal_0090_Edge-on.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0090_Edge-on.jpg",
+            "file_path": "data/raw_images/sdss_gal_0090_Edge-on.jpg",
             "ra": 192.749938,
             "dec": 10.561984,
             "morphology": "Edge-on",
@@ -1276,7 +1276,7 @@
         {
             "sample_id": 91,
             "filename": "sdss_gal_0091_Edge-on.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0091_Edge-on.jpg",
+            "file_path": "data/raw_images/sdss_gal_0091_Edge-on.jpg",
             "ra": 192.757384,
             "dec": 10.572876,
             "morphology": "Edge-on",
@@ -1290,7 +1290,7 @@
         {
             "sample_id": 92,
             "filename": "sdss_gal_0092_Edge-on.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0092_Edge-on.jpg",
+            "file_path": "data/raw_images/sdss_gal_0092_Edge-on.jpg",
             "ra": 192.765994,
             "dec": 10.578268,
             "morphology": "Edge-on",
@@ -1304,7 +1304,7 @@
         {
             "sample_id": 93,
             "filename": "sdss_gal_0093_Edge-on.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0093_Edge-on.jpg",
+            "file_path": "data/raw_images/sdss_gal_0093_Edge-on.jpg",
             "ra": 193.887722,
             "dec": 15.895832,
             "morphology": "Edge-on",
@@ -1318,7 +1318,7 @@
         {
             "sample_id": 94,
             "filename": "sdss_gal_0094_Edge-on.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0094_Edge-on.jpg",
+            "file_path": "data/raw_images/sdss_gal_0094_Edge-on.jpg",
             "ra": 193.89441,
             "dec": 15.900346,
             "morphology": "Edge-on",
@@ -1332,7 +1332,7 @@
         {
             "sample_id": 95,
             "filename": "sdss_gal_0095_Edge-on.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0095_Edge-on.jpg",
+            "file_path": "data/raw_images/sdss_gal_0095_Edge-on.jpg",
             "ra": 193.902288,
             "dec": 15.909966,
             "morphology": "Edge-on",
@@ -1346,7 +1346,7 @@
         {
             "sample_id": 96,
             "filename": "sdss_gal_0096_Edge-on.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0096_Edge-on.jpg",
+            "file_path": "data/raw_images/sdss_gal_0096_Edge-on.jpg",
             "ra": 193.912183,
             "dec": 15.91799,
             "morphology": "Edge-on",
@@ -1360,7 +1360,7 @@
         {
             "sample_id": 97,
             "filename": "sdss_gal_0097_Merger_Anomaly.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0097_Merger_Anomaly.jpg",
+            "file_path": "data/raw_images/sdss_gal_0097_Merger_Anomaly.jpg",
             "ra": 195.124704,
             "dec": 14.220327,
             "morphology": "Merger_Anomaly",
@@ -1374,7 +1374,7 @@
         {
             "sample_id": 98,
             "filename": "sdss_gal_0098_Merger_Anomaly.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0098_Merger_Anomaly.jpg",
+            "file_path": "data/raw_images/sdss_gal_0098_Merger_Anomaly.jpg",
             "ra": 195.131503,
             "dec": 14.227966,
             "morphology": "Merger_Anomaly",
@@ -1388,7 +1388,7 @@
         {
             "sample_id": 99,
             "filename": "sdss_gal_0099_Merger_Anomaly.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0099_Merger_Anomaly.jpg",
+            "file_path": "data/raw_images/sdss_gal_0099_Merger_Anomaly.jpg",
             "ra": 195.142812,
             "dec": 14.238366,
             "morphology": "Merger_Anomaly",
@@ -1402,7 +1402,7 @@
         {
             "sample_id": 100,
             "filename": "sdss_gal_0100_Merger_Anomaly.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0100_Merger_Anomaly.jpg",
+            "file_path": "data/raw_images/sdss_gal_0100_Merger_Anomaly.jpg",
             "ra": 195.150047,
             "dec": 14.244327,
             "morphology": "Merger_Anomaly",
@@ -1416,7 +1416,7 @@
         {
             "sample_id": 101,
             "filename": "sdss_gal_0101_Merger_Anomaly.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0101_Merger_Anomaly.jpg",
+            "file_path": "data/raw_images/sdss_gal_0101_Merger_Anomaly.jpg",
             "ra": 196.320654,
             "dec": 12.785242,
             "morphology": "Merger_Anomaly",
@@ -1430,7 +1430,7 @@
         {
             "sample_id": 102,
             "filename": "sdss_gal_0102_Merger_Anomaly.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0102_Merger_Anomaly.jpg",
+            "file_path": "data/raw_images/sdss_gal_0102_Merger_Anomaly.jpg",
             "ra": 196.329962,
             "dec": 12.790086,
             "morphology": "Merger_Anomaly",
@@ -1444,7 +1444,7 @@
         {
             "sample_id": 103,
             "filename": "sdss_gal_0103_Merger_Anomaly.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0103_Merger_Anomaly.jpg",
+            "file_path": "data/raw_images/sdss_gal_0103_Merger_Anomaly.jpg",
             "ra": 196.339138,
             "dec": 12.801334,
             "morphology": "Merger_Anomaly",
@@ -1458,7 +1458,7 @@
         {
             "sample_id": 104,
             "filename": "sdss_gal_0104_Merger_Anomaly.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0104_Merger_Anomaly.jpg",
+            "file_path": "data/raw_images/sdss_gal_0104_Merger_Anomaly.jpg",
             "ra": 196.345689,
             "dec": 12.808021,
             "morphology": "Merger_Anomaly",
@@ -1472,7 +1472,7 @@
         {
             "sample_id": 105,
             "filename": "sdss_gal_0105_Merger_Anomaly.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0105_Merger_Anomaly.jpg",
+            "file_path": "data/raw_images/sdss_gal_0105_Merger_Anomaly.jpg",
             "ra": 194.984941,
             "dec": 16.113193,
             "morphology": "Merger_Anomaly",
@@ -1486,7 +1486,7 @@
         {
             "sample_id": 106,
             "filename": "sdss_gal_0106_Merger_Anomaly.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0106_Merger_Anomaly.jpg",
+            "file_path": "data/raw_images/sdss_gal_0106_Merger_Anomaly.jpg",
             "ra": 194.993538,
             "dec": 16.120513,
             "morphology": "Merger_Anomaly",
@@ -1500,7 +1500,7 @@
         {
             "sample_id": 107,
             "filename": "sdss_gal_0107_Merger_Anomaly.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0107_Merger_Anomaly.jpg",
+            "file_path": "data/raw_images/sdss_gal_0107_Merger_Anomaly.jpg",
             "ra": 195.001389,
             "dec": 16.127206,
             "morphology": "Merger_Anomaly",
@@ -1514,7 +1514,7 @@
         {
             "sample_id": 108,
             "filename": "sdss_gal_0108_Merger_Anomaly.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0108_Merger_Anomaly.jpg",
+            "file_path": "data/raw_images/sdss_gal_0108_Merger_Anomaly.jpg",
             "ra": 195.008815,
             "dec": 16.137369,
             "morphology": "Merger_Anomaly",
@@ -1528,7 +1528,7 @@
         {
             "sample_id": 109,
             "filename": "sdss_gal_0109_Merger_Anomaly.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0109_Merger_Anomaly.jpg",
+            "file_path": "data/raw_images/sdss_gal_0109_Merger_Anomaly.jpg",
             "ra": 197.452444,
             "dec": 13.553313,
             "morphology": "Merger_Anomaly",
@@ -1542,7 +1542,7 @@
         {
             "sample_id": 110,
             "filename": "sdss_gal_0110_Merger_Anomaly.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0110_Merger_Anomaly.jpg",
+            "file_path": "data/raw_images/sdss_gal_0110_Merger_Anomaly.jpg",
             "ra": 197.459462,
             "dec": 13.563483,
             "morphology": "Merger_Anomaly",
@@ -1556,7 +1556,7 @@
         {
             "sample_id": 111,
             "filename": "sdss_gal_0111_Merger_Anomaly.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0111_Merger_Anomaly.jpg",
+            "file_path": "data/raw_images/sdss_gal_0111_Merger_Anomaly.jpg",
             "ra": 197.466554,
             "dec": 13.57041,
             "morphology": "Merger_Anomaly",
@@ -1570,7 +1570,7 @@
         {
             "sample_id": 112,
             "filename": "sdss_gal_0112_Merger_Anomaly.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0112_Merger_Anomaly.jpg",
+            "file_path": "data/raw_images/sdss_gal_0112_Merger_Anomaly.jpg",
             "ra": 197.475454,
             "dec": 13.577725,
             "morphology": "Merger_Anomaly",
@@ -1584,7 +1584,7 @@
         {
             "sample_id": 113,
             "filename": "sdss_gal_0113_Merger_Anomaly.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0113_Merger_Anomaly.jpg",
+            "file_path": "data/raw_images/sdss_gal_0113_Merger_Anomaly.jpg",
             "ra": 195.885321,
             "dec": 11.441577,
             "morphology": "Merger_Anomaly",
@@ -1598,7 +1598,7 @@
         {
             "sample_id": 114,
             "filename": "sdss_gal_0114_Merger_Anomaly.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0114_Merger_Anomaly.jpg",
+            "file_path": "data/raw_images/sdss_gal_0114_Merger_Anomaly.jpg",
             "ra": 195.891498,
             "dec": 11.449859,
             "morphology": "Merger_Anomaly",
@@ -1612,7 +1612,7 @@
         {
             "sample_id": 115,
             "filename": "sdss_gal_0115_Merger_Anomaly.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0115_Merger_Anomaly.jpg",
+            "file_path": "data/raw_images/sdss_gal_0115_Merger_Anomaly.jpg",
             "ra": 195.901139,
             "dec": 11.458374,
             "morphology": "Merger_Anomaly",
@@ -1626,7 +1626,7 @@
         {
             "sample_id": 116,
             "filename": "sdss_gal_0116_Merger_Anomaly.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0116_Merger_Anomaly.jpg",
+            "file_path": "data/raw_images/sdss_gal_0116_Merger_Anomaly.jpg",
             "ra": 195.908104,
             "dec": 11.466554,
             "morphology": "Merger_Anomaly",
@@ -1640,7 +1640,7 @@
         {
             "sample_id": 117,
             "filename": "sdss_gal_0117_Merger_Anomaly.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0117_Merger_Anomaly.jpg",
+            "file_path": "data/raw_images/sdss_gal_0117_Merger_Anomaly.jpg",
             "ra": 196.874985,
             "dec": 15.318956,
             "morphology": "Merger_Anomaly",
@@ -1654,7 +1654,7 @@
         {
             "sample_id": 118,
             "filename": "sdss_gal_0118_Merger_Anomaly.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0118_Merger_Anomaly.jpg",
+            "file_path": "data/raw_images/sdss_gal_0118_Merger_Anomaly.jpg",
             "ra": 196.882217,
             "dec": 15.330459,
             "morphology": "Merger_Anomaly",
@@ -1668,7 +1668,7 @@
         {
             "sample_id": 119,
             "filename": "sdss_gal_0119_Merger_Anomaly.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0119_Merger_Anomaly.jpg",
+            "file_path": "data/raw_images/sdss_gal_0119_Merger_Anomaly.jpg",
             "ra": 196.889035,
             "dec": 15.338951,
             "morphology": "Merger_Anomaly",
@@ -1682,7 +1682,7 @@
         {
             "sample_id": 120,
             "filename": "sdss_gal_0120_Merger_Anomaly.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0120_Merger_Anomaly.jpg",
+            "file_path": "data/raw_images/sdss_gal_0120_Merger_Anomaly.jpg",
             "ra": 196.897972,
             "dec": 15.34528,
             "morphology": "Merger_Anomaly",
@@ -1696,7 +1696,7 @@
         {
             "sample_id": 121,
             "filename": "sdss_gal_0121_Merger_Anomaly.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0121_Merger_Anomaly.jpg",
+            "file_path": "data/raw_images/sdss_gal_0121_Merger_Anomaly.jpg",
             "ra": 198.111615,
             "dec": 14.893169,
             "morphology": "Merger_Anomaly",
@@ -1710,7 +1710,7 @@
         {
             "sample_id": 122,
             "filename": "sdss_gal_0122_Merger_Anomaly.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0122_Merger_Anomaly.jpg",
+            "file_path": "data/raw_images/sdss_gal_0122_Merger_Anomaly.jpg",
             "ra": 198.120773,
             "dec": 14.900873,
             "morphology": "Merger_Anomaly",
@@ -1724,7 +1724,7 @@
         {
             "sample_id": 123,
             "filename": "sdss_gal_0123_Merger_Anomaly.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0123_Merger_Anomaly.jpg",
+            "file_path": "data/raw_images/sdss_gal_0123_Merger_Anomaly.jpg",
             "ra": 198.128206,
             "dec": 14.91014,
             "morphology": "Merger_Anomaly",
@@ -1738,7 +1738,7 @@
         {
             "sample_id": 124,
             "filename": "sdss_gal_0124_Merger_Anomaly.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0124_Merger_Anomaly.jpg",
+            "file_path": "data/raw_images/sdss_gal_0124_Merger_Anomaly.jpg",
             "ra": 198.137048,
             "dec": 14.916757,
             "morphology": "Merger_Anomaly",
@@ -1752,7 +1752,7 @@
         {
             "sample_id": 125,
             "filename": "sdss_gal_0125_Merger_Anomaly.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0125_Merger_Anomaly.jpg",
+            "file_path": "data/raw_images/sdss_gal_0125_Merger_Anomaly.jpg",
             "ra": 197.232095,
             "dec": 10.885095,
             "morphology": "Merger_Anomaly",
@@ -1766,7 +1766,7 @@
         {
             "sample_id": 126,
             "filename": "sdss_gal_0126_Merger_Anomaly.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0126_Merger_Anomaly.jpg",
+            "file_path": "data/raw_images/sdss_gal_0126_Merger_Anomaly.jpg",
             "ra": 197.23939,
             "dec": 10.891218,
             "morphology": "Merger_Anomaly",
@@ -1780,7 +1780,7 @@
         {
             "sample_id": 127,
             "filename": "sdss_gal_0127_Merger_Anomaly.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0127_Merger_Anomaly.jpg",
+            "file_path": "data/raw_images/sdss_gal_0127_Merger_Anomaly.jpg",
             "ra": 197.246473,
             "dec": 10.898373,
             "morphology": "Merger_Anomaly",
@@ -1794,7 +1794,7 @@
         {
             "sample_id": 128,
             "filename": "sdss_gal_0128_Merger_Anomaly.jpg",
-            "file_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\experiments\\exp_01_galaxy_morphology\\data\\raw_images\\sdss_gal_0128_Merger_Anomaly.jpg",
+            "file_path": "data/raw_images/sdss_gal_0128_Merger_Anomaly.jpg",
             "ra": 197.254606,
             "dec": 10.908044,
             "morphology": "Merger_Anomaly",
