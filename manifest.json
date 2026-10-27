@@ -154,5 +154,57 @@
         "docx_size_bytes": 43513,
         "validated_40_pages": true,
         "timestamp": "2026-10-26T17:04:44.619988+00:00"
+    },
+    "Volume_13": {
+        "volume_number": 13,
+        "title": "Drake Equation and Its Extensions",
+        "batch": 4,
+        "target_pages": 40,
+        "actual_pages": 40,
+        "pdf_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\volumes\\VOLUME_13_Drake_Equation_and_Its_Extensions.pdf",
+        "docx_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\docx_sources\\VOLUME_13_Drake_Equation_and_Its_Extensions.docx",
+        "pdf_size_bytes": 81899,
+        "docx_size_bytes": 45293,
+        "validated_40_pages": true,
+        "timestamp": "2026-10-27T11:20:06.371858+00:00"
+    },
+    "Volume_14": {
+        "volume_number": 14,
+        "title": "AI for Astrobiological Discovery",
+        "batch": 4,
+        "target_pages": 40,
+        "actual_pages": 40,
+        "pdf_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\volumes\\VOLUME_14_AI_for_Astrobiological_Discovery.pdf",
+        "docx_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\docx_sources\\VOLUME_14_AI_for_Astrobiological_Discovery.docx",
+        "pdf_size_bytes": 79207,
+        "docx_size_bytes": 44052,
+        "validated_40_pages": true,
+        "timestamp": "2026-10-27T11:20:07.110518+00:00"
+    },
+    "Volume_15": {
+        "volume_number": 15,
+        "title": "Astronomical Data Engineering",
+        "batch": 4,
+        "target_pages": 40,
+        "actual_pages": 40,
+        "pdf_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\volumes\\VOLUME_15_Astronomical_Data_Engineering.pdf",
+        "docx_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\docx_sources\\VOLUME_15_Astronomical_Data_Engineering.docx",
+        "pdf_size_bytes": 78414,
+        "docx_size_bytes": 43749,
+        "validated_40_pages": true,
+        "timestamp": "2026-10-27T11:20:07.877950+00:00"
+    },
+    "Volume_16": {
+        "volume_number": 16,
+        "title": "Computer Vision for Planetary and Astronomical Images",
+        "batch": 4,
+        "target_pages": 40,
+        "actual_pages": 40,
+        "pdf_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\volumes\\VOLUME_16_Computer_Vision_for_Planetary_and_Astronomical_Images.pdf",
+        "docx_path": "C:\\Users\\HP\\.gemini\\antigravity\\scratch\\multigalaxial_life\\docx_sources\\VOLUME_16_Computer_Vision_for_Planetary_and_Astronomical_Images.docx",
+        "pdf_size_bytes": 77001,
+        "docx_size_bytes": 43797,
+        "validated_40_pages": true,
+        "timestamp": "2026-10-27T11:20:08.691583+00:00"
     }
 }
