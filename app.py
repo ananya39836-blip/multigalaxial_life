@@ -87,6 +87,18 @@ try:
 except Exception:
     HARNESS_AVAILABLE = False
 
+# Level 3 Simulation Engine
+try:
+    from level_3.level_3_simulation_engine import (
+        execute_level_3_volume,
+        execute_all_100_master_prompts,
+        get_volume_metadata,
+        LEVEL_3_MANIFEST
+    )
+    L3_SIM_AVAILABLE = True
+except Exception:
+    L3_SIM_AVAILABLE = False
+
 
 # ==============================================================================
 # STREAMLIT CONFIGURATION
@@ -441,57 +453,163 @@ with tab_alife:
 
 
 # ==============================================================================
-# TAB L3: LEVEL 3 100-VOLUME RESEARCH ENCYCLOPEDIA & REGRESSION
+# TAB L3: LEVEL 3 100-MASTER-PROMPT RESEARCH SIMULATION STUDIO
 # ==============================================================================
 with tab_l3:
-    st.markdown("### 📚 Level 3: 100-Volume Research Encyclopedia (4,000 Pages)")
-    st.caption("Specialized Scientific Focus: Advanced Computer Vision & High-Dimensional Statistical Regression across Cosmic Environments.")
+    st.markdown("### 🧬 Level 3: 100-Master-Prompt Scientific Simulation Studio")
+    st.caption("Active Computer Vision & High-Dimensional Statistical Regression across 10 Thematic Cosmic Domains (100 Research Master Prompts).")
 
-    m_l3_path = os.path.join(ROOT_DIR, "level_3", "level_3_manifest.json")
-    if os.path.exists(m_l3_path):
-        with open(m_l3_path, "r") as f:
-            l3_manifest = json.load(f)
-        
-        c1, c2, c3, c4 = st.columns(4)
-        c1.metric("Total Volumes", f"{len(l3_manifest)} Volumes", "10 Major Parts")
-        c2.metric("Total Main-Body Pages", f"{sum(v['actual_pages'] for v in l3_manifest.values()):,} Pages", "Exactly 40.0 / Vol")
-        c3.metric("Formats Generated", "Dual Format", "Word (.docx) & PDF (.pdf)")
-        c4.metric("Verification Status", "100% Verified", "PyPDF Certified")
+    subtab_sim, subtab_batch, subtab_docs = st.tabs([
+        "🔬 Interactive Master Prompt Simulator",
+        "⚡ Batch Execute All 100 Master Prompts",
+        "📚 Encyclopedia Manifest & Desktop Access"
+    ])
 
-        st.markdown("#### Explore Level 3 Research Volumes by Part")
-        selected_part = st.selectbox(
-            "Select Thematic Part",
-            [
-                "Part I: Deep Convolutional Morphometry & Astrometric Regression (Vols 1-10)",
-                "Part II: Multi-Spectral & Hyperspectral Computer Vision Inversion (Vols 11-20)",
-                "Part III: 3D Volumetric Neural Radiance Fields & Tomographic Vision (Vols 21-30)",
-                "Part IV: Planetary LiDAR Altimetry, Point Clouds, & Surface Regression (Vols 31-40)",
-                "Part V: Visual SLAM, Optical Flow, & Visual-Inertial Odometry (Vols 41-50)",
-                "Part VI: Self-Supervised Vision Transformers & Morphological Anomalies (Vols 51-60)",
-                "Part VII: Autonomous Robot Vision, Depth Estimation, & Egocentric Perception (Vols 61-70)",
-                "Part VIII: Bayesian Deep Regression, Uncertainty, & Gaussian Processes (Vols 71-80)",
-                "Part IX: Non-Parametric CAS Morphometrics & Non-Linear Regression (Vols 81-90)",
-                "Part X: NASA TRL 7 Computer Vision Certification & End-to-End Synthesis (Vols 91-100)"
-            ]
-        )
-        
-        part_prefix = selected_part.split(":")[0].strip()
-        part_vols = [v for v in l3_manifest.values() if v.get("part", "").startswith(part_prefix)]
-        
-        vol_table = []
-        for v in part_vols:
-            vol_table.append({
-                "Vol #": f"Vol {v['volume_number']:03d}",
-                "Volume Title": v["title"],
-                "Pages": f"{v['actual_pages']} Pages",
-                "DOCX File": os.path.basename(v["docx_path"]),
-                "PDF File": os.path.basename(v["pdf_path"]),
-                "SHA-256 Checksum": v["pdf_sha256"][:12] + "..."
-            })
-        st.dataframe(pd.DataFrame(vol_table), use_container_width=True)
+    # --------------------------------------------------------------------------
+    # SUBTAB 1: LIVE INTERACTIVE PROMPT SIMULATOR
+    # --------------------------------------------------------------------------
+    with subtab_sim:
+        st.markdown("#### Live Computer Vision & Regression Experiment Execution")
+        st.write("Select any of the 100 Level 3 Master Prompts to parameterize, execute the mathematical regression model live, and inspect real-time interactive visual and metric results.")
 
-        st.markdown("#### Direct Download and Desktop Access")
-        st.info("📂 **Desktop Access**: All 100 Word manuscripts are available on your Desktop at `C:\\Users\\HP\\Desktop\\MULTIGALAXIAL_LIFE_LEVEL_3_DOCX`.")
+        all_vol_options = [
+            (i, f"Vol {i:03d} - {get_volume_metadata(i)['title']}")
+            for i in range(1, 101)
+        ] if L3_SIM_AVAILABLE else [(1, "Vol 001 - Deep Sersic Regression")]
+
+        c_sel1, c_sel2 = st.columns([2.5, 1])
+        with c_sel1:
+            selected_vol_tuple = st.selectbox(
+                "Select Master Research Prompt / Volume (1 - 100)",
+                all_vol_options,
+                format_func=lambda x: x[1],
+                index=0,
+                key="l3_vol_selector"
+            )
+            vol_num_selected = selected_vol_tuple[0]
+            v_meta = get_volume_metadata(vol_num_selected) if L3_SIM_AVAILABLE else {"title": "Default", "part": "Part I", "domain_description": "", "formula_latex": ""}
+
+        with c_sel2:
+            st.markdown(f"**Thematic Part:** `{v_meta['part'].split(':')[0].strip()}`")
+            st.caption(f"**Domain Scope:** {v_meta['domain_description']}")
+
+        st.markdown("##### Mathematical Formulation & Regression Target:")
+        st.latex(v_meta["formula_latex"])
+
+        p_col1, p_col2, p_col3, p_col4 = st.columns(4)
+        with p_col1:
+            noise_val = st.slider("Sensor Noise Level (σ)", 0.01, 0.25, 0.05, 0.01, key="l3_sim_noise")
+        with p_col2:
+            n_samples_val = st.slider("Sample Evaluation Grid (N)", 40, 250, 120, 10, key="l3_sim_samples")
+        with p_col3:
+            seed_val = st.number_input("RNG Seed", value=42, step=1, key="l3_sim_seed")
+        with p_col4:
+            st.write("")
+            st.write("")
+            run_single_sim = st.button("🚀 Execute Simulation Live", use_container_width=True, key="btn_run_single_l3")
+
+        # Auto-run on first load or when button clicked
+        if run_single_sim or f"l3_res_{vol_num_selected}" not in st.session_state:
+            with st.spinner(f"Executing mathematical simulation for Volume {vol_num_selected:03d}..."):
+                if L3_SIM_AVAILABLE:
+                    st.session_state[f"l3_res_{vol_num_selected}"] = execute_level_3_volume(
+                        volume_number=vol_num_selected,
+                        noise_level=noise_val,
+                        n_samples=n_samples_val,
+                        seed=seed_val
+                    )
+
+        if f"l3_res_{vol_num_selected}" in st.session_state:
+            res_obj = st.session_state[f"l3_res_{vol_num_selected}"]
+            
+            # Metrics Bar
+            m1, m2, m3, m4 = st.columns(4)
+            m1.metric("Regression Fit (R²)", f"{res_obj['r2_score']:.4f}", "Goodness of Fit")
+            m2.metric("RMSE Error", f"{res_obj['rmse']:.4f}", "Residual Standard Deviation")
+            m3.metric("MAE Error", f"{res_obj['mae']:.4f}", "Mean Absolute Deviation")
+            m4.metric("Execution Latency", f"{res_obj['execution_latency_ms']:.2f} ms", "Real-Time Compute")
+
+            # Main Visual Chart
+            st.plotly_chart(res_obj["figure"], use_container_width=True)
+
+            # Inferred Parameters & Scientific Interpretation
+            p_c1, p_c2 = st.columns([1, 1.4])
+            with p_c1:
+                st.markdown("##### Inferred Model Parameters")
+                st.json(res_obj["fitted_params"])
+            with p_c2:
+                st.markdown("##### Empirical Scientific Finding")
+                st.info(f"🔬 **Finding**: {res_obj['summary']}")
+                st.caption(f"**Volume Provenance Checksum (SHA-256)**: `{res_obj['pdf_sha256']}`")
+
+    # --------------------------------------------------------------------------
+    # SUBTAB 2: BATCH EXECUTE ALL 100 MASTER PROMPTS
+    # --------------------------------------------------------------------------
+    with subtab_batch:
+        st.markdown("#### Automated Battery Execution across All 100 Master Prompts")
+        st.write("Execute all 100 scientific simulation models end-to-end to verify global convergence, quantitative regression accuracy, and computational scalability.")
+
+        if st.button("⚡ Execute All 100 Master Prompts Now", use_container_width=True, key="btn_run_all_l3"):
+            prog_bar = st.progress(0, text="Initializing 100 Master Research Prompts...")
+            status_text = st.empty()
+
+            def update_progress(current, total):
+                prog_bar.progress(int((current / total) * 100), text=f"Executing Master Prompt #{current:03d} / {total}...")
+
+            if L3_SIM_AVAILABLE:
+                batch_res = execute_all_100_master_prompts(noise_level=0.05, n_samples=80, seed=42, progress_callback=update_progress)
+                st.session_state.l3_batch_results = batch_res
+                prog_bar.progress(100, text="All 100 Master Prompts Successfully Executed!")
+                st.success(f"Executed all {batch_res['total_prompts_executed']} Master Prompts in {batch_res['total_execution_time_sec']:.2f} seconds!")
+
+        if "l3_batch_results" in st.session_state:
+            b_data = st.session_state.l3_batch_results
+            
+            b1, b2, b3, b4 = st.columns(4)
+            b1.metric("Total Prompts Executed", f"{b_data['total_prompts_executed']} / 100", "100% Complete")
+            b2.metric("Overall Mean R²", f"{b_data['overall_mean_r2']:.4f}", f"Min R²: {b_data['overall_min_r2']:.4f}")
+            b3.metric("Overall Mean RMSE", f"{b_data['overall_mean_rmse']:.4f}", "Residual Error")
+            b4.metric("Total Runtime", f"{b_data['total_execution_time_sec']:.2f} s", f"Avg: {b_data['overall_mean_latency_ms']:.1f} ms/vol")
+
+            st.markdown("#### Domain Aggregate Performance (10 Thematic Parts)")
+            st.dataframe(b_data["domain_aggregates"], use_container_width=True)
+
+            st.markdown("#### 100-Volume R² Regression Performance Distribution")
+            df_plot = b_data["results_dataframe"]
+            fig_batch = px.scatter(
+                df_plot,
+                x="Volume_Number",
+                y="R2_Score",
+                color="Part",
+                size="Latency_ms",
+                hover_data=["Title", "RMSE", "Latency_ms"],
+                title="Level 3: R² Performance across all 100 Master Prompts"
+            )
+            fig_batch.update_layout(template="plotly_dark", height=420)
+            st.plotly_chart(fig_batch, use_container_width=True)
+
+            with st.expander("🔍 View Complete 100-Prompt Execution Table"):
+                st.dataframe(df_plot, use_container_width=True)
+
+    # --------------------------------------------------------------------------
+    # SUBTAB 3: MANIFEST & DESKTOP ACCESS
+    # --------------------------------------------------------------------------
+    with subtab_docs:
+        st.markdown("#### Level 3 Encyclopedia Specifications & Volume Index")
+        m_l3_path = os.path.join(ROOT_DIR, "level_3", "level_3_manifest.json")
+        if os.path.exists(m_l3_path):
+            with open(m_l3_path, "r", encoding="utf-8") as f:
+                l3_manifest = json.load(f)
+            
+            c1, c2, c3, c4 = st.columns(4)
+            c1.metric("Total Volumes", f"{len(l3_manifest)} Volumes", "10 Major Parts")
+            c2.metric("Total Main-Body Pages", f"{sum(v['actual_pages'] for v in l3_manifest.values()):,} Pages", "Exactly 40.0 / Vol")
+            c3.metric("Formats Generated", "Dual Format", "Word (.docx) & PDF (.pdf)")
+            c4.metric("Verification Status", "100% Verified", "PyPDF Certified")
+
+            st.markdown("#### Direct Download and Desktop Access")
+            st.info("📂 **Desktop Access**: All 100 Word manuscripts are available on your Desktop at `C:\\Users\\HP\\Desktop\\MULTIGALAXIAL_LIFE_LEVEL_3_DOCX`.")
+            st.info("📂 **PDF Access**: All 100 PDF manuscripts are available on your Desktop at `C:\\Users\\HP\\Desktop\\MULTIGALAXIAL_LIFE_LEVEL_3_PDFS`.")
 
 
 # ==============================================================================
