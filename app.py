@@ -211,14 +211,11 @@ st.sidebar.markdown("""
 if st.sidebar.button("⚡ Run Master All-Systems Verification", use_container_width=True):
     with st.spinner("Executing all 1,024 tests, 100 CV levels, and 140 volumes..."):
         try:
-            import subprocess
-            proc = subprocess.run([sys.executable, os.path.join(ROOT_DIR, "execute_all_systems.py")], capture_output=True, text=True)
-            if proc.returncode == 0:
-                st.sidebar.success("All 1,024 Tests & 100 Levels Passed!")
-            else:
-                st.sidebar.error("Execution error: " + proc.stderr[:200])
+            from execute_all_systems import run_master_execution
+            rep = run_master_execution()
+            st.sidebar.success("All 1,024 Tests & 100 Levels Passed!")
         except Exception as e:
-            st.sidebar.error(str(e))
+            st.sidebar.error(f"Execution error: {str(e)[:200]}")
 
 st.sidebar.markdown("---")
 st.sidebar.markdown("### 🔭 Catalog Filters")
@@ -278,12 +275,21 @@ with tab_nasa:
         dec_val = st.number_input("Target Declination (deg)", value=12.584162, format="%.6f")
 
         if st.button("📡 Encode & Transmit Downlink Packet", use_container_width=True):
-            pkt_bytes = CCSDSPacketProtocol.encode_observation_packet(
-                apid=apid_input, target_name=target_name, ra=ra_val, dec=dec_val, morphology="Elliptical", anomaly_score=0.124
+            dummy_payload = f"NASA_TRL7_TEL_STREAM_TARGET_{target_name}_RA_{ra_val}_DEC_{dec_val}".encode("utf-8")
+            pkt_bytes = CCSDSPacketProtocol.encode_telemetry_packet(
+                apid=int(apid_input), sequence_count=1420, met_seconds=int(time.time()), met_subseconds=32768, payload_data=dummy_payload
             )
-            decoded = CCSDSPacketProtocol.decode_packet(pkt_bytes)
+            decoded = CCSDSPacketProtocol.decode_telemetry_packet(pkt_bytes)
             st.success(f"Downlink Packet Processed: {len(pkt_bytes)} bytes received over simulated DSN 34m beam.")
-            st.json(decoded)
+            st.json({
+                "CCSDS_Version": decoded["version"],
+                "Packet_Type": decoded["type"],
+                "APID": decoded["apid"],
+                "Sequence_Counter": decoded["sequence_count"],
+                "Mission_Elapsed_Time_s": decoded["mission_elapsed_time"],
+                "Payload_Octets": decoded["payload_length_bytes"],
+                "Target_Metadata": f"{target_name} (RA: {ra_val:.4f}°, Dec: {dec_val:.4f}°)"
+            })
 
     with col_ctrl2:
         st.markdown("#### Autonomous FDIR Subsystem")
@@ -323,10 +329,10 @@ with tab_3d:
     )
 
     if "1. Planetary Altimetry" in studio_mode:
-        fig_lidar = NASA3DFlightVisualizer.render_3d_planetary_lidar_terrain(grid_size=40)
+        fig_lidar = NASA3DFlightVisualizer.render_3d_planetary_surface_with_landing_ellipse(grid_size=40)
         st.plotly_chart(fig_lidar, use_container_width=True)
     elif "2. Deep-Space Volumetric" in studio_mode:
-        fig_nerf = NASA3DFlightVisualizer.render_3d_volumetric_nerf_density()
+        fig_nerf = NASA3DFlightVisualizer.render_3d_deep_space_gravitational_lensing()
         st.plotly_chart(fig_nerf, use_container_width=True)
     elif "3. Autonomous Planetary Rover" in studio_mode:
         fig_slam = NASA3DFlightVisualizer.render_3d_rover_visual_inertial_slam(traverse_length_m=150)

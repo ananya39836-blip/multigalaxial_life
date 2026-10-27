@@ -2,17 +2,17 @@
     "stage_1_cv_100_levels": {
         "status": "PASSED",
         "levels_executed": 100,
-        "total_time_sec": 0.09
+        "total_time_sec": 0.04
     },
     "stage_2_level_1_tests": {
         "status": "PASSED",
         "tests_passed": 1010,
-        "total_time_sec": 6.53
+        "total_time_sec": 3.65
     },
     "stage_3_level_2_tests": {
         "status": "PASSED",
         "tests_passed": 14,
-        "total_time_sec": 1.49
+        "total_time_sec": 0.65
     },
     "stage_4_experiments": {
         "status": "PASSED",
@@ -20,23 +20,23 @@
         "exp_01_sha256": "61e9437c25b7c218f15b9f330c8e587f83df39864254f38b988b5ba3e769d4f9",
         "exp_02_trials": 3,
         "exp_02_sha256": "702ad78632e60fcf3debeaf694004db1428ede211cf3c0ac5afc95324a29e3ef",
-        "total_time_sec": 9.55
+        "total_time_sec": 3.63
     },
     "stage_5_level_2_volumes": {
         "status": "PASSED",
         "volumes_verified": 40,
         "total_pages": 1600,
-        "total_time_sec": 0.04
+        "total_time_sec": 0.0
     },
     "stage_6_level_3_volumes": {
         "status": "PASSED",
         "volumes_verified": 100,
         "total_pages": 4000,
-        "total_time_sec": 0.05
+        "total_time_sec": 0.0
     },
     "stage_7_app_health": {
         "status": "PASSED",
-        "localhost_port_8505": 200,
-        "total_time_sec": 7.18
+        "localhost_port_8505": "200",
+        "total_time_sec": 10.51
     }
 }
